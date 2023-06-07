@@ -3,21 +3,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>How to head an array ? | Functional programming with VBA</title>
+<title>Function head(…) in vba | Functional programming with VBA</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="How to head an array ?" />
+<meta property="og:title" content="Function head(…) in vba" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="One convenient way to solve a problem is to write recursive functions. When we can write recursive functions in vba but the tooling around (head, tail, cons, …) to process data recursively is not provided in the core language definition. In this blog, we are aiming to build the various missing functions needed to write vba code in a functional programming style. To do so, we will start building our first useful function, head. The function head has a different name depending on the programming language, as an example, it is called car in Scheme or Lisp. Its purpose is to return the first element of a list and it is defined only for non-empty list. In this article, we are going to provide a vba implementation of the head function taking as a parameter an array. In the future, we will look at a more functional datastructure called cons instead of using arrays. See below its implementation." />
-<meta property="og:description" content="One convenient way to solve a problem is to write recursive functions. When we can write recursive functions in vba but the tooling around (head, tail, cons, …) to process data recursively is not provided in the core language definition. In this blog, we are aiming to build the various missing functions needed to write vba code in a functional programming style. To do so, we will start building our first useful function, head. The function head has a different name depending on the programming language, as an example, it is called car in Scheme or Lisp. Its purpose is to return the first element of a list and it is defined only for non-empty list. In this article, we are going to provide a vba implementation of the head function taking as a parameter an array. In the future, we will look at a more functional datastructure called cons instead of using arrays. See below its implementation." />
-<link rel="canonical" href="http://localhost:4000/2023/06/07/how-to-head-an-array.html" />
-<meta property="og:url" content="http://localhost:4000/2023/06/07/how-to-head-an-array.html" />
+<meta name="description" content="One convenient way to solve a problem is to write recursive functions. The vba runtime environment allows use to write recursive functions but the tooling around (head, tail, cons, …) to process data recursively is not provided in the core language definition. In this blog, we are aiming to build the various missing functions needed to write vba code in a functional programming style. To do so, we will start building our first useful function, head. The function head has a different name depending on the programming language, as an example, it is called car in Scheme or Lisp. Its purpose is to return the first element of a list and it is defined only for non-empty lists. In this article, we are going to provide a vba implementation of the head function taking as a parameter an array. In the future, we will look at a more functional datastructure called cons instead of using arrays. See below its implementation. Function head(xs As Variant) As Variant" />
+<meta property="og:description" content="One convenient way to solve a problem is to write recursive functions. The vba runtime environment allows use to write recursive functions but the tooling around (head, tail, cons, …) to process data recursively is not provided in the core language definition. In this blog, we are aiming to build the various missing functions needed to write vba code in a functional programming style. To do so, we will start building our first useful function, head. The function head has a different name depending on the programming language, as an example, it is called car in Scheme or Lisp. Its purpose is to return the first element of a list and it is defined only for non-empty lists. In this article, we are going to provide a vba implementation of the head function taking as a parameter an array. In the future, we will look at a more functional datastructure called cons instead of using arrays. See below its implementation. Function head(xs As Variant) As Variant" />
+<link rel="canonical" href="http://localhost:4000/2023/06/07/function-head-in-vba.html" />
+<meta property="og:url" content="http://localhost:4000/2023/06/07/function-head-in-vba.html" />
 <meta property="og:site_name" content="Functional programming with VBA" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-06-07T02:00:00+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="How to head an array ?" />
+<meta property="twitter:title" content="Function head(…) in vba" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-07T02:00:00+02:00","datePublished":"2023-06-07T02:00:00+02:00","description":"One convenient way to solve a problem is to write recursive functions. When we can write recursive functions in vba but the tooling around (head, tail, cons, …) to process data recursively is not provided in the core language definition. In this blog, we are aiming to build the various missing functions needed to write vba code in a functional programming style. To do so, we will start building our first useful function, head. The function head has a different name depending on the programming language, as an example, it is called car in Scheme or Lisp. Its purpose is to return the first element of a list and it is defined only for non-empty list. In this article, we are going to provide a vba implementation of the head function taking as a parameter an array. In the future, we will look at a more functional datastructure called cons instead of using arrays. See below its implementation.","headline":"How to head an array ?","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2023/06/07/how-to-head-an-array.html"},"url":"http://localhost:4000/2023/06/07/how-to-head-an-array.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-07T02:00:00+02:00","datePublished":"2023-06-07T02:00:00+02:00","description":"One convenient way to solve a problem is to write recursive functions. The vba runtime environment allows use to write recursive functions but the tooling around (head, tail, cons, …) to process data recursively is not provided in the core language definition. In this blog, we are aiming to build the various missing functions needed to write vba code in a functional programming style. To do so, we will start building our first useful function, head. The function head has a different name depending on the programming language, as an example, it is called car in Scheme or Lisp. Its purpose is to return the first element of a list and it is defined only for non-empty lists. In this article, we are going to provide a vba implementation of the head function taking as a parameter an array. In the future, we will look at a more functional datastructure called cons instead of using arrays. See below its implementation. Function head(xs As Variant) As Variant","headline":"Function head(…) in vba","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2023/06/07/function-head-in-vba.html"},"url":"http://localhost:4000/2023/06/07/function-head-in-vba.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Functional programming with VBA" /></head>
 <body><header class="site-header" role="banner">
@@ -40,14 +40,15 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">How to head an array ?</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Function head(...) in vba</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="2023-06-07T02:00:00+02:00" itemprop="datePublished">Jun 7, 2023
       </time></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>One convenient way to solve a problem is to write recursive functions. When we can write recursive functions in vba but the tooling around (head, tail, cons, …) to process data recursively is not provided in the core language definition. In this blog, we are aiming to build the various missing functions needed to write vba code in a functional programming style. To do so, we will start building our first useful function, <code class="language-plaintext highlighter-rouge">head</code>. The function head has a different name depending on the programming language, as an example, it is called <code class="language-plaintext highlighter-rouge">car</code> in Scheme or Lisp. Its purpose is to return the first element of a list and it is defined only for non-empty list. In this article, we are going to provide a vba implementation of the head function taking as a parameter an array. In the future, we will look at a more functional datastructure called cons instead of using arrays. See below its implementation.</p>
+    <p>One convenient way to solve a problem is to write recursive functions. The vba runtime environment allows use to write recursive functions but the tooling around (head, tail, cons, …) to process data recursively is not provided in the core language definition. In this blog, we are aiming to build the various missing functions needed to write vba code in a functional programming style. To do so, we will start building our first useful function, <code class="language-plaintext highlighter-rouge">head</code>. The function head has a different name depending on the programming language, as an example, it is called <code class="language-plaintext highlighter-rouge">car</code> in Scheme or Lisp. Its purpose is to return the first element of a list and it is defined only for non-empty lists. In this article, we are going to provide a vba implementation of the head function taking as a parameter an array. In the future, we will look at a more functional datastructure called cons instead of using arrays. See below its implementation.
+<br /><br /></p>
 
 <figure class="highlight"><pre><code class="language-vb" data-lang="vb"><span class="k">Function</span> <span class="nf">head</span><span class="p">(</span><span class="n">xs</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">)</span> <span class="ow">As</span> <span class="kt">Variant</span>
 
@@ -61,7 +62,9 @@
 
 <span class="k">End</span> <span class="k">Function</span></code></pre></figure>
 
-<p>The function takes an array, we assume here that the user passes an initialized array, more checks can be added to return a meaningful message if not. The function returns the first item of the array parameter. In scenarios where the input array is not inititalized or empty, the function returns the value Empty. Why returning Empty ? In vba, Empty is used to define a non-value compared to Null which defines a non-valid value. An error could also have been returned but this makes the use of the function more difficult. See below how the function head can be used in a vba code.</p>
+<p><br />
+The function takes an array (we keep the function generic by using the input and output type Variant) and returns the first item of its parameter. In scenarios where the input array is not inititalized or empty, the function returns the value Empty. Why returning Empty ? In vba, Empty is used to define a non-value compared to Null which defines a non-valid value. An error could also have been returned but this makes the use of the function more difficult. See below how the function head can be used in a vba code.
+<br /><br /></p>
 
 <figure class="highlight"><pre><code class="language-vb" data-lang="vb"><span class="k">Sub</span> <span class="nf">main</span><span class="p">()</span>
 
@@ -74,8 +77,10 @@
 
 <span class="k">End</span> <span class="k">Sub</span></code></pre></figure>
 
+<p><br />
+Thanks for reading.</p>
 
-  </div><a class="u-url" href="/2023/06/07/how-to-head-an-array.html" hidden></a>
+  </div><a class="u-url" href="/2023/06/07/function-head-in-vba.html" hidden></a>
 </article>
 
       </div>
