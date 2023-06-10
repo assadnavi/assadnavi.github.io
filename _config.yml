@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Functional programming with VBA
-email: hello@functionalvba.com
+email: 
 description: >- # this means to ignore newlines until "baseurl:"
   My description.
 baseurl: "" # the subpath of your site, e.g. /blog

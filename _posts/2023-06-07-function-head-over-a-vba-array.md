@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Function head(...) in vba"
+title:  "Function head() over a vba array"
 date:   2023-06-07 00:00:00 +0000
 published: true
 ---
@@ -20,7 +20,7 @@ Function head(xs As Variant) As Variant
 End Function
 {% endhighlight %}
 <br/>
-The function takes an array (we keep the function generic by using the input and output type Variant) and returns the first item of its parameter. In scenarios where the input array is not inititalized or empty, the function returns the value Empty. Why returning Empty ? In vba, Empty is used to define a non-value compared to Null which defines a non-valid value. An error could also have been returned but this makes the use of the function more difficult. See below how the function head can be used in a vba code.
+The function takes an array (we keep the function generic by using the input and output type Variant) and returns the first item of its parameter. We assume here that the data is a valid array. In scenarios where the input array is not inititalized or empty, the function returns the value Empty. Why returning Empty ? In vba, Empty is used to define a non-value compared to Null which defines a non-valid value. An error could also have been returned but this makes the use of the function more difficult. See below how the function head can be used in a vba code.
 <br/><br/>
 {% highlight vb %}
 Sub main()
@@ -35,4 +35,4 @@ Sub main()
 End Sub
 {% endhighlight %}
 <br/>
-Thanks for reading.
+Thanks for reading. If you have any comments <a href="mailto:assad.navi@gmail.com">get in touch</a>
