@@ -4,20 +4,20 @@ title:  "Function tail() over a vba array"
 date:   2023-06-12 00:00:00 +0000
 published: true
 ---
-In this article, we will look at our second tool that will help us solve problems in a recursive programming style. The function is called `tail`. The function takes an array and returns a new array with all the input items except its first element. The order of the elements is preserved. The function tail is defined only for non-empty arrays. See examples of its logic.
+In this article, we will look at our second tool that will help us solve problems in a recursive programming style. The function is called `tail`. The function takes an array as a parameter and returns a copy of it without its first element. The order of the elements is preserved. The function tail is defined only for non-empty arrays. See examples of its logic.
 <br/><br/>
 
-{% highlight plaintext %}
+{% highlight cpp %}
 
-tail of array[1, 2, 3, 4] is array[2, 3, 4]
+tail of array [1, 2, 3, 4] is array [2, 3, 4]
 
-tail of array["a", "b"] is array["b"]
+tail of array ["a", "b"] is array ["b"]
 
-tail of array["z"] is array[]
+tail of array ["z"] is array []
 
-tail of array[] is not defined (Error)
+tail of array [] is not defined
 
-tail of non-array is not defined (Error)
+tail of non-array is not defined
 {% endhighlight %}
 
 <br/>
