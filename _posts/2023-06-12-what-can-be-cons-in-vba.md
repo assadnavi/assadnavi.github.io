@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "What is cons() in vba ?"
+title:  "What can be cons() in vba ?"
 date:   2023-06-12 00:00:00 +0000
 published: true
 ---
-The last tool we need to start solving our first problem with a recursive approach is `cons`. In functional programming, `cons` is a datastructure which holds one value and one reference to another cons datastructure. A cons is a pair (a-value, a-reference). This datastructure can be used to represent a list of items. See below an example.
+The last tool we need before solving our first problem with a recursive approach is `cons`. In functional programming, `cons` is a datastructure which holds one value and one reference to another cons datastructure. A cons is a pair (a-value, a-reference). This datastructure can be used to represent a list of items. See below an example.
 <br/><br/>
 
 {% highlight cpp %}
@@ -12,7 +12,7 @@ The list [1, 2] can be constructed as cons(1, cons(2, empty))
 {% endhighlight %}
 
 <br/>
-The advantage of using this datastructure when representing a list is that `head()` and `tail()` become trivial (respectively retrieving the first or the second elements). A basic approach to build a cons in vba will be to base it on vba arrays and create a function to add a value at a beginning of an existing array. By doing so, we will be able to reuse the implemented functions head() and tail() on the cons output. The function cons() takes two parameters, a value and an array, and returns an array. Here are some examples showing the function logic.
+The advantage of using this datastructure when representing a list is that `head()` and `tail()` become trivial (respectively retrieving the first or the second elements). A basic approach to build a cons in vba will be to base it on vba arrays and create a function to add a value at a beginning of an existing array. By doing so, we will be able to reuse the implemented functions head() and tail() over the cons output. The function cons() takes two parameters, a value and an array, and returns an array. Here are some examples showing the function logic.
 <br/><br/>
 {% highlight cpp %}
 cons of 1 and array [2, 3] is array [1, 2, 3]
@@ -46,8 +46,15 @@ How can this function be used in a vba code ?
 Sub main()
 
     Dim r As Variant
+
+    r = cons("a", Array())
+    ' r is the array ["a"]
+
+    r = cons("a", Array("b", "c"))
+    ' r is the array ["a", "b", "c"]
+
     r = cons("a", cons("z", Array(1, 2, 3)))
-    ' r is the array ["a", "b", 1, 2, 3]
+    ' r is the array ["a", "z", 1, 2, 3]
 
 End Sub
 {% endhighlight %}
