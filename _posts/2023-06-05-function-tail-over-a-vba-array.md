@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Function tail() over a vba array"
-date:   2023-06-12 00:00:00 +0000
+date:   2023-06-05 00:00:00 +0000
 published: true
 ---
 In this article, we will look at our second tool that will help us solve problems in a recursive programming style. The function is called `tail`. The function takes an array as a parameter and returns a copy of it without its first element. The order of the elements is preserved. The function tail is defined only for non-empty arrays. See examples of its logic.

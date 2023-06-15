@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Function head() over a vba array"
-date:   2023-06-07 00:00:00 +0000
+date:   2023-05-29 00:00:00 +0000
 published: true
 ---
 One convenient way to solve a problem is to write recursive functions. The vba runtime environment allows use to write recursive functions but the tooling around (head, tail, cons, ...) to process data recursively is not provided in the core language definition. In this blog, we are aiming to build the various missing functions needed to write vba code in a functional programming style. To do so, we will start building our first useful function, `head`. The function head has a different name depending on the programming language, as an example, it is called `car` in Scheme or Lisp. Its purpose is to return the first element of a list and it is defined only for non-empty lists. In this article, we are going to provide a vba implementation of the head function taking as a parameter an array. In the future, we will look at a more functional datastructure called cons instead of using arrays. See below its implementation.
