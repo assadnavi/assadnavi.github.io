@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Our first recursive function in vba"
+title:  "First recursive function in vba"
 date:   2023-06-19 00:00:00 +0000
 published: true
 ---
