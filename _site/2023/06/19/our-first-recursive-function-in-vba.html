@@ -9,8 +9,8 @@
 <meta name="generator" content="Jekyll v4.3.2" />
 <meta property="og:title" content="Our first recursive function in vba" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Finally we got to the point where we can write our first recursive function. In this article, we will write a recursive function in vba to solve the array membership problem, which can be stated as =&gt; for a given array and value, is the value contained in the array ? You can see the logic of the function below." />
-<meta property="og:description" content="Finally we got to the point where we can write our first recursive function. In this article, we will write a recursive function in vba to solve the array membership problem, which can be stated as =&gt; for a given array and value, is the value contained in the array ? You can see the logic of the function below." />
+<meta name="description" content="Finally we got to the point where we can write our first recursive function. In this article, we will write a recursive function in vba to solve the array membership problem, which can be stated as : For a given array and value, is the value contained in the array ? You can see the logic of the function below." />
+<meta property="og:description" content="Finally we got to the point where we can write our first recursive function. In this article, we will write a recursive function in vba to solve the array membership problem, which can be stated as : For a given array and value, is the value contained in the array ? You can see the logic of the function below." />
 <link rel="canonical" href="http://localhost:4000/2023/06/19/our-first-recursive-function-in-vba.html" />
 <meta property="og:url" content="http://localhost:4000/2023/06/19/our-first-recursive-function-in-vba.html" />
 <meta property="og:site_name" content="Functional programming with VBA" />
@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Our first recursive function in vba" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-19T02:00:00+02:00","datePublished":"2023-06-19T02:00:00+02:00","description":"Finally we got to the point where we can write our first recursive function. In this article, we will write a recursive function in vba to solve the array membership problem, which can be stated as =&gt; for a given array and value, is the value contained in the array ? You can see the logic of the function below.","headline":"Our first recursive function in vba","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2023/06/19/our-first-recursive-function-in-vba.html"},"url":"http://localhost:4000/2023/06/19/our-first-recursive-function-in-vba.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-06-19T02:00:00+02:00","datePublished":"2023-06-19T02:00:00+02:00","description":"Finally we got to the point where we can write our first recursive function. In this article, we will write a recursive function in vba to solve the array membership problem, which can be stated as : For a given array and value, is the value contained in the array ? You can see the logic of the function below.","headline":"Our first recursive function in vba","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2023/06/19/our-first-recursive-function-in-vba.html"},"url":"http://localhost:4000/2023/06/19/our-first-recursive-function-in-vba.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Functional programming with VBA" /></head>
 <body><header class="site-header" role="banner">
@@ -49,61 +49,61 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>Finally we got to the point where we can write our first recursive function. In this article, we will write a recursive function in vba to solve the array membership problem, which can be stated as =&gt; for a given array and value, is the value contained in the array ? You can see the logic of the function below.
+    <p>Finally we got to the point where we can write our first recursive function. In this article, we will write a recursive function in vba to solve the array membership problem, which can be stated as : For a given array and value, is the value contained in the array ? You can see the logic of the function below.
 <br /><br /></p>
 
-<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">Is</span> <span class="mi">1</span> <span class="n">a</span> <span class="n">contained</span> <span class="n">in</span> <span class="n">the</span> <span class="n">array</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">?</span> <span class="n">Yes</span>
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">Is</span> <span class="mi">1</span> <span class="n">contained</span> <span class="n">in</span> <span class="n">the</span> <span class="n">array</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">?</span> <span class="n">Yes</span>
 
-<span class="n">Is</span> <span class="mi">8</span> <span class="n">a</span> <span class="n">contained</span> <span class="n">in</span> <span class="n">the</span> <span class="n">array</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span> <span class="o">?</span> <span class="n">No</span>
+<span class="n">Is</span> <span class="mi">8</span> <span class="n">contained</span> <span class="n">in</span> <span class="n">the</span> <span class="n">array</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">]</span> <span class="o">?</span> <span class="n">No</span>
 
 <span class="n">Is</span> <span class="s">"z"</span> <span class="n">contained</span> <span class="n">in</span> <span class="n">the</span> <span class="n">array</span> <span class="p">[</span><span class="s">"a"</span><span class="p">,</span> <span class="s">"b"</span><span class="p">,</span> <span class="s">"c"</span><span class="p">]</span> <span class="o">?</span> <span class="n">No</span></code></pre></figure>
 
 <p><br />
- The idea of using recursive functions to solve a problem is to solve the entire problem by solving a smaller piece of it multiple times. To do so, we are going to be helped by the functions <code class="language-plaintext highlighter-rouge">head()</code> and <code class="language-plaintext highlighter-rouge">tail()</code> that has been implemented in previous articles. See references <a href="http://localhost:4000/2023/05/29/function-head-over-a-vba-array.html">head()</a>, <a href="http://localhost:4000/2023/06/05/function-tail-over-a-vba-array.html">tail()</a>. Here is a quick reminder of those two functions.
+ The idea of using recursive functions is to solve the entire problem by solving a smaller piece of it multiple times. To do so, we are going to be helped by the functions <code class="language-plaintext highlighter-rouge">head()</code> and <code class="language-plaintext highlighter-rouge">tail()</code> that have been implemented in previous articles. See references <a href="http://localhost:4000/2023/05/29/function-head-over-a-vba-array.html">head()</a>, <a href="http://localhost:4000/2023/06/05/function-tail-over-a-vba-array.html">tail()</a>. Here is a quick reminder of those two functions.
 <br /><br /></p>
 
 <figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">head</span> <span class="n">of</span> <span class="n">the</span> <span class="n">array</span> <span class="p">[</span><span class="s">"a"</span><span class="p">,</span> <span class="s">"b"</span><span class="p">,</span> <span class="s">"c"</span><span class="p">]</span> <span class="n">is</span> <span class="s">"a"</span>
 
-<span class="n">head</span> <span class="n">of</span> <span class="n">a</span> <span class="n">non</span><span class="o">-</span><span class="n">array</span> <span class="n">is</span> <span class="n">not</span> <span class="n">defined</span>
+<span class="n">head</span> <span class="n">of</span> <span class="n">a</span> <span class="n">empty</span><span class="o">-</span><span class="n">array</span> <span class="n">is</span> <span class="n">not</span> <span class="n">defined</span>
 
 <span class="n">tail</span> <span class="n">of</span> <span class="n">the</span> <span class="n">array</span> <span class="p">[</span><span class="s">"a"</span><span class="p">,</span> <span class="s">"b"</span><span class="p">,</span> <span class="s">"c"</span><span class="p">]</span> <span class="n">is</span> <span class="n">the</span> <span class="n">array</span> <span class="p">[</span><span class="s">"b"</span><span class="p">,</span> <span class="s">"c"</span><span class="p">]</span>
 
-<span class="n">tail</span> <span class="n">of</span> <span class="n">a</span> <span class="n">non</span><span class="o">-</span><span class="n">array</span> <span class="n">is</span> <span class="n">not</span> <span class="n">defined</span></code></pre></figure>
+<span class="n">tail</span> <span class="n">of</span> <span class="n">a</span> <span class="n">empty</span><span class="o">-</span><span class="n">array</span> <span class="n">is</span> <span class="n">not</span> <span class="n">defined</span></code></pre></figure>
 
 <p><br />
- To explain the recursive procedure to solve the array membership problem, I will use an example and display all the required steps.
+In this article, for simplicity for the reader, I will not discuss the entire theory about recursive functions but rather provide a pragmatic introduction. To explain the recursive procedure to solve the array membership problem, I will use an example and display all the required steps.
 <br /><br /></p>
 
-<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="c1">// Question</span>
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="c1">// Start</span>
 <span class="n">Is</span> <span class="mi">1</span> <span class="n">contained</span> <span class="n">in</span> <span class="n">the</span> <span class="n">array</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">?</span>
 
 <span class="c1">// Step 1</span>
-<span class="n">Is</span> <span class="mi">1</span> <span class="n">equal</span> <span class="n">to</span> <span class="mi">3</span> <span class="o">?</span> <span class="n">No</span><span class="p">,</span> <span class="mi">1</span> <span class="n">is</span> <span class="n">not</span> <span class="n">equal</span> <span class="n">to</span> <span class="mi">3</span>
+<span class="n">Is</span> <span class="mi">1</span> <span class="n">equal</span> <span class="n">to</span> <span class="mi">3</span> <span class="o">?</span> <span class="n">No</span><span class="p">.</span> <span class="n">Start</span> <span class="n">again</span> <span class="n">with</span> <span class="n">array</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 
 <span class="c1">// Step 2</span>
-<span class="n">Is</span> <span class="mi">1</span> <span class="n">equal</span> <span class="n">to</span> <span class="mi">2</span> <span class="o">?</span> <span class="n">No</span><span class="p">,</span> <span class="mi">1</span> <span class="n">is</span> <span class="n">not</span> <span class="n">equal</span> <span class="n">to</span> <span class="mi">2</span>
+<span class="n">Is</span> <span class="mi">1</span> <span class="n">equal</span> <span class="n">to</span> <span class="mi">2</span> <span class="o">?</span> <span class="n">No</span><span class="p">,</span> <span class="n">Start</span> <span class="n">again</span> <span class="n">with</span> <span class="n">array</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
 <span class="c1">// Step 3</span>
 <span class="n">Is</span> <span class="mi">1</span> <span class="n">equal</span> <span class="n">to</span> <span class="mi">1</span> <span class="o">?</span> <span class="n">Yes</span><span class="p">,</span> <span class="mi">1</span> <span class="n">is</span> <span class="n">equal</span> <span class="n">to</span> <span class="mi">1</span></code></pre></figure>
 
 <p><br />
-Now that you have the steps, let me show you the same example by displaying where the functions head() and tail() are used.
+Now that we have the steps, let me show you the same example by displaying where the functions head() and tail() are used.
 <br /><br /></p>
 
-<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="c1">// Question</span>
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="c1">// Start</span>
 <span class="n">Is</span> <span class="mi">1</span> <span class="n">contained</span> <span class="n">in</span> <span class="n">the</span> <span class="n">array</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">?</span>
 
 <span class="c1">// Step 1</span>
-<span class="n">Is</span> <span class="mi">1</span> <span class="n">equal</span> <span class="n">to</span> <span class="n">head</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span> <span class="o">?</span> <span class="n">No</span><span class="p">.</span> <span class="n">Try</span> <span class="n">with</span> <span class="n">tail</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">Is</span> <span class="mi">1</span> <span class="n">equal</span> <span class="n">to</span> <span class="n">head</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span> <span class="o">?</span> <span class="n">No</span><span class="p">.</span> <span class="n">Start</span> <span class="n">again</span> <span class="n">with</span> <span class="n">tail</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 
 <span class="c1">// Step 2</span>
-<span class="n">Is</span> <span class="mi">1</span> <span class="n">equal</span> <span class="n">to</span> <span class="n">head</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span> <span class="o">?</span> <span class="n">No</span><span class="p">.</span> <span class="n">Try</span> <span class="n">with</span> <span class="n">tail</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+<span class="n">Is</span> <span class="mi">1</span> <span class="n">equal</span> <span class="n">to</span> <span class="n">head</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span> <span class="o">?</span> <span class="n">No</span><span class="p">.</span> <span class="n">Start</span> <span class="n">again</span> <span class="n">with</span> <span class="n">tail</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 
 <span class="c1">// Step 3</span>
-<span class="n">Is</span> <span class="mi">1</span> <span class="n">equal</span> <span class="n">to</span> <span class="mi">1</span> <span class="o">?</span> <span class="n">Yes</span></code></pre></figure>
+<span class="n">Is</span> <span class="mi">1</span> <span class="n">equal</span> <span class="n">to</span> <span class="n">head</span><span class="p">([</span><span class="mi">1</span><span class="p">])</span> <span class="o">?</span> <span class="n">Yes</span></code></pre></figure>
 
 <p><br />
-Now, here is the vba implementation. The function is called <code class="language-plaintext highlighter-rouge">isMember</code> and takes two parameters, one value and one array. The function returns a boolean, true if the value is contained in the array otherwise false. In this implementation, it is assumed that the caller has checked that the parameters are initialized and from the correct type before calling this function. Additionally for code clarity, we have added a helper function <code class="language-plaintext highlighter-rouge">isArrayEmpty</code> which returns true if and only if its parameter is an empty array.
+Vba implementation : The function is called <code class="language-plaintext highlighter-rouge">isMember</code> and takes two parameters, one value and one array. The function returns a boolean, true if the value is contained in the array otherwise false. In this implementation, it is assumed that the caller has checked that the parameters are initialized and of the correct type before calling this function. Additionally for code clarity, we have added a helper function <code class="language-plaintext highlighter-rouge">isArrayEmpty</code> which returns true if and only if its parameter is an empty array.
 <br /><br /></p>
 
 <figure class="highlight"><pre><code class="language-vb" data-lang="vb"><span class="k">Function</span> <span class="nf">isMember</span><span class="p">(</span><span class="n">x</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">,</span> <span class="n">xs</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">)</span> <span class="ow">As</span> <span class="kt">Boolean</span>
@@ -125,7 +125,7 @@ Now, here is the vba implementation. The function is called <code class="languag
 <span class="k">End</span> <span class="k">Function</span></code></pre></figure>
 
 <p><br />
-How can this function be used in a vba code ?
+The first if-condition statement, from this code, is called the <code class="language-plaintext highlighter-rouge">base case</code> of the recursion. We reach this scenario when the array parameter is empty and therefore we know that the answer is false. How can this function be used in a vba code ?
 <br /><br /></p>
 
 <figure class="highlight"><pre><code class="language-vb" data-lang="vb"><span class="k">Sub</span> <span class="nf">main</span><span class="p">()</span>
