@@ -50,4 +50,4 @@ Sub main()
 End Sub
 {% endhighlight %}
 <br/>
-In the future, we will rework this example to implement it over a more functional datastructure called `cons`. Thanks for reading. If you have any comments <a href="mailto:assad.navi@gmail.com">get in touch</a>
+In the future, we will rework this example to implement it over a more functional datastructure called `cons`. Thanks for reading. If you have any comments <a href="mailto:hello@assadnavi.ch">get in touch</a>.

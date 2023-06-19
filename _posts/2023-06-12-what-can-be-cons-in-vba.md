@@ -59,4 +59,4 @@ Sub main()
 End Sub
 {% endhighlight %}
 <br/>
-Thanks for reading. If you have any comments <a href="mailto:assad.navi@gmail.com">get in touch</a>
+Thanks for reading. If you have any comments <a href="mailto:hello@assadnavi.ch">get in touch</a>.
