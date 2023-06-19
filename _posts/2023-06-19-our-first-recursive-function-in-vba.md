@@ -36,13 +36,13 @@ tail of a non-array is not defined
 Is 1 contained in the array [3, 2, 1] ?
 
 // Step 1
-Is 1 equal to 3 ? No, 1 is not equal to 3. Continue
+Is 1 equal to 3 ? No, 1 is not equal to 3
 
 // Step 2
-Is 1 equal to 2 ? No, 1 is not equal to 2. Continue
+Is 1 equal to 2 ? No, 1 is not equal to 2
 
 // Step 3
-Is 1 equal to 1 ? Yes, 1 is equal to 1. Done
+Is 1 equal to 1 ? Yes, 1 is equal to 1
 
 {% endhighlight %}
 
@@ -55,10 +55,10 @@ Now that you have the steps, let me show you the same example by displaying wher
 Is 1 contained in the array [3, 2, 1] ?
 
 // Step 1
-Is 1 equal to head([3, 2, 1]) ? No. Question again with tail([3, 2, 1])
+Is 1 equal to head([3, 2, 1]) ? No. Try with tail([3, 2, 1])
 
 // Step 2
-Is 1 equal to head([2, 1]) ? No. Question again with tail([2, 1])
+Is 1 equal to head([2, 1]) ? No. Try with tail([2, 1])
 
 // Step 3
 Is 1 equal to 1 ? Yes
@@ -66,7 +66,7 @@ Is 1 equal to 1 ? Yes
 {% endhighlight %}
 
 <br/>
-Now, here is the vba implementation. The function is called `isMember` and takes two parameters, one value and one array. The function returns a boolean, true if the value is contained in the array otherwise false. In this implementation, it is assumed that the caller has checked that the parameters are initialized before calling this function. Additionally for code clarity, we have added a helper function `isArrayEmpty` which returns true if and only if its parameter is an empty array.
+Now, here is the vba implementation. The function is called `isMember` and takes two parameters, one value and one array. The function returns a boolean, true if the value is contained in the array otherwise false. In this implementation, it is assumed that the caller has checked that the parameters are initialized and from the correct type before calling this function. Additionally for code clarity, we have added a helper function `isArrayEmpty` which returns true if and only if its parameter is an empty array.
 <br/><br/>
 {% highlight vb %}
 Function isMember(x As Variant, xs As Variant) As Boolean
