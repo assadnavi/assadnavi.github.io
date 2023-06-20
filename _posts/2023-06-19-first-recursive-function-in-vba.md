@@ -88,7 +88,7 @@ End Function
 
 {% endhighlight %}
 <br/>
-The first if-condition statement, from this code, is called the `base case` of the recursion. We reach this scenario when the array parameter is empty and therefore we know that the answer is false. How can this function be used in a vba code ?
+The first if-condition criteria is called the `base case` of the recursion. We reach this scenario when the array parameter is empty and therefore we return false (an element can never be found in an empty array). The second if-condition criteria checks if the value is found at the first position of the array (head). If yes, we return true, otherwise we run the function again by dropping the first element of the array (tail). This last step is called the `induction step`. We will discuss more about this code pattern and terminology in future articles. How can this function be used in a vba code ?
 <br/><br/>
 {% highlight vb %}
 Sub main()
