@@ -4,15 +4,20 @@ title:  "What can be cons() in vba ?"
 date:   2023-06-12 00:00:00 +0000
 published: true
 ---
-The last tool we need before solving our first problem with a recursive approach is `cons`. In functional programming, `cons` is a datastructure which holds one value and one reference to another cons datastructure. A cons is a pair (a-value, a-reference). This datastructure can be used to represent a list of items. See below an example.
+The last tool we need before solving our first problem with a recursive approach is `cons`. In functional programming, `cons` is a datastructure which holds a pair of things (I say 'things' because they can be either a value or a reference). A cons is simply a pair (a, b). This datastructure can be used to represent a list of items. See below an example.
 <br/><br/>
 
 {% highlight cpp %}
+
+The list [1] can be constructed as cons(1, empty)
+
 The list [1, 2] can be constructed as cons(1, cons(2, empty))
+
+Where empty is any symbol that represents a non-value (e.g. Empty in vba)
 {% endhighlight %}
 
 <br/>
-The advantage of using this datastructure when representing a list is that `head()` and `tail()` become trivial (respectively retrieving the first or the second elements). A basic approach to build a cons in vba will be to base it on vba arrays and create a function to add a value at a beginning of an existing array. By doing so, we will be able to reuse the implemented functions head() and tail() over the cons output. The function cons() takes two parameters, a value and an array, and returns an array. Here are some examples showing the function logic.
+The advantage of using cons to build list is that `head()` and `tail()` become trivial (respectively retrieving the first or the second elements of the pair). We call `consing` the operation of adding an element at a beginning of a list. A basic approach to build a cons in vba will be to base it on arrays and create a function to add a value at a beginning of an existing array. By doing so, we will be able to reuse the implemented functions head() and tail() over its output. The function cons() takes two parameters, a value and an array, and returns an array. Here are some examples showing the function logic.
 <br/><br/>
 {% highlight cpp %}
 cons of 1 and array [2, 3] is array [1, 2, 3]
