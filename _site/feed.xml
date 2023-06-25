@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-20T12:57:13+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Functional programming with VBA</title><subtitle>My description.</subtitle><entry><title type="html">First recursive function in vba</title><link href="http://localhost:4000/2023/06/19/first-recursive-function-in-vba.html" rel="alternate" type="text/html" title="First recursive function in vba" /><published>2023-06-19T02:00:00+02:00</published><updated>2023-06-19T02:00:00+02:00</updated><id>http://localhost:4000/2023/06/19/first-recursive-function-in-vba</id><content type="html" xml:base="http://localhost:4000/2023/06/19/first-recursive-function-in-vba.html"><![CDATA[<p>Finally we got to the point where we can write our first recursive function. In this article, we will write a recursive function in vba to solve the array membership problem, which can be stated as : For a given array and value, is the value contained in the array ? You can see the logic of the function below.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-25T20:50:21+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Functional programming with VBA</title><subtitle>My description.</subtitle><entry><title type="html">Recursive array sum function</title><link href="http://localhost:4000/2023/06/25/recursive-array-sum-function.html" rel="alternate" type="text/html" title="Recursive array sum function" /><published>2023-06-25T02:00:00+02:00</published><updated>2023-06-25T02:00:00+02:00</updated><id>http://localhost:4000/2023/06/25/recursive-array-sum-function</id><content type="html" xml:base="http://localhost:4000/2023/06/25/recursive-array-sum-function.html"><![CDATA[<p>It is time for our second recursive function in vba. In this article, we will implement a recursive solution to sum numbers from an array. As our first recursive function, we will use the previously implemented helper functions  <a href="http://localhost:4000/2023/05/29/function-head-over-a-vba-array.html">head()</a>, <a href="http://localhost:4000/2023/06/05/function-tail-over-a-vba-array.html">tail()</a> and <a href="http://localhost:4000/2023/06/19/first-recursive-function-in-vba.html">isArrayEmpty()</a>. For reference, I have linked them to the articles containing their implementation. First, here is logic we want to implement.
+<br /><br /></p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">Sum</span> <span class="n">of</span> <span class="n">array</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="n">is</span> <span class="mi">1</span>
+
+<span class="n">Sum</span> <span class="n">of</span> <span class="n">array</span> <span class="p">[]</span> <span class="n">is</span> <span class="mi">0</span>
+
+<span class="n">Sum</span> <span class="n">of</span> <span class="n">array</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="n">is</span> <span class="mi">2</span></code></pre></figure>
+
+<p><br />
+Now that we know the problem we would like to solve, lets look at how we should structure the logic such that we can solve it recursively (functional programming style). When defining recursive functions, there are two major things to look at. 1) the <code class="language-plaintext highlighter-rouge">base case</code>, where we will indicate to stop the recursive calls 2) the <code class="language-plaintext highlighter-rouge">induction step</code>, where we indicate how we can find the final answer by using the function recursively on a smaller problem. Mathematically, it looks like below, where <i>x1, x2, …, xn</i> are the n items of an array. The first and the second lines are respectively the base case and the inducation step.
+<br /><br /></p>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">sum</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="mi">0</span>
+
+<span class="n">sum</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">,</span> <span class="n">x3</span><span class="p">,</span> <span class="p">...,</span> <span class="n">xn</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="n">x1</span> <span class="o">+</span> <span class="n">sum</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">x3</span><span class="p">,</span> <span class="p">...,</span> <span class="n">xn</span><span class="p">)</span></code></pre></figure>
+
+<p><br />
+Lets now write this mathematical function in vba. The function takes a single parameter which is a vba array. To make it more generic and be able to sum over various number types (Integer, Long, Double), we will keep its type variant. The function will have to deal with two scenarios : <br />1) When the parameter is an empty array =&gt; In this case the result is 0<br />2) When the parameter is not empty =&gt; The result is the first element added to the sum of the rest.<br />
+As always, it is the responsibility of the caller to pass initialized data of the correct type to the function.
+<br /><br /></p>
+
+<figure class="highlight"><pre><code class="language-vb" data-lang="vb"><span class="k">Function</span> <span class="nf">arraySum</span><span class="p">(</span><span class="n">xs</span> <span class="ow">As</span> <span class="kt">Variant</span><span class="p">)</span> <span class="ow">As</span> <span class="kt">Double</span>
+
+    <span class="k">If</span> <span class="n">isArrayEmpty</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span> <span class="k">Then</span>
+        <span class="n">arraySum</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">Else</span>
+        <span class="n">arraySum</span> <span class="o">=</span> <span class="n">head</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span> <span class="o">+</span> <span class="n">arraySum</span><span class="p">(</span><span class="n">tail</span><span class="p">(</span><span class="n">xs</span><span class="p">))</span>
+    <span class="k">End</span> <span class="k">If</span>
+
+<span class="k">End</span> <span class="k">Function</span></code></pre></figure>
+
+<p><br />
+How can this function be used in a vba code ?
+<br /><br /></p>
+
+<figure class="highlight"><pre><code class="language-vb" data-lang="vb"><span class="k">Sub</span> <span class="nf">main</span><span class="p">()</span>
+
+    <span class="k">Dim</span> <span class="nv">r</span> <span class="ow">As</span> <span class="kt">Variant</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">arraySum</span><span class="p">(</span><span class="n">Array</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+    <span class="c1">' r is 6</span>
+
+    <span class="n">r</span> <span class="o">=</span> <span class="n">arraySum</span><span class="p">(</span><span class="n">Array</span><span class="p">())</span>
+    <span class="c1">' r is 0</span>
+
+    <span class="n">r</span> <span class="o">=</span> <span class="n">arraySum</span><span class="p">(</span><span class="n">Array</span><span class="p">(</span><span class="mf">1.1</span><span class="p">,</span> <span class="mf">2.2</span><span class="p">))</span>
+    <span class="c1">' r is 3.3</span>
+
+<span class="k">End</span> <span class="k">Sub</span></code></pre></figure>
+
+<p><br />
+Thanks for reading. I hope this article helped you better understand how to think recursively. If you have any comments <a href="mailto:hello@assadnavi.ch">get in touch</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[It is time for our second recursive function in vba. In this article, we will implement a recursive solution to sum numbers from an array. As our first recursive function, we will use the previously implemented helper functions head(), tail() and isArrayEmpty(). For reference, I have linked them to the articles containing their implementation. First, here is logic we want to implement.]]></summary></entry><entry><title type="html">First recursive function in vba</title><link href="http://localhost:4000/2023/06/19/first-recursive-function-in-vba.html" rel="alternate" type="text/html" title="First recursive function in vba" /><published>2023-06-19T02:00:00+02:00</published><updated>2023-06-19T02:00:00+02:00</updated><id>http://localhost:4000/2023/06/19/first-recursive-function-in-vba</id><content type="html" xml:base="http://localhost:4000/2023/06/19/first-recursive-function-in-vba.html"><![CDATA[<p>Finally we got to the point where we can write our first recursive function. In this article, we will write a recursive function in vba to solve the array membership problem, which can be stated as : For a given array and value, is the value contained in the array ? You can see the logic of the function below.
 <br /><br /></p>
 
 <figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="n">Is</span> <span class="mi">1</span> <span class="n">contained</span> <span class="n">in</span> <span class="n">the</span> <span class="n">array</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">?</span> <span class="n">Yes</span>
