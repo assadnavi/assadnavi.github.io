@@ -16,7 +16,7 @@ Is "z" contained in the array ["a", "b", "c"] ? No
 {% endhighlight %}
 
 <br/>
- The idea of using recursive functions is to solve the entire problem by solving a smaller piece of it multiple times. To do so, we are going to be helped by the functions `head()` and `tail()` that have been implemented in previous articles. See references <a href="http://localhost:4000/2023/05/29/function-head-over-a-vba-array.html">head()</a>,&nbsp;<a href="http://localhost:4000/2023/06/05/function-tail-over-a-vba-array.html">tail()</a>. Here is a quick reminder of those two functions.
+ The idea of using recursive functions is to solve the entire problem by solving a smaller piece of it multiple times. To do so, we are going to be helped by the functions `head()` and `tail()` that have been implemented in previous articles. See references <a href="https://www.functionalvba.com/2023/05/29/function-head-over-a-vba-array.html">head()</a>,&nbsp;<a href="https://www.functionalvba.com/2023/06/05/function-tail-over-a-vba-array.html">tail()</a>. Here is a quick reminder of those two functions.
 <br/><br/>
 {% highlight cpp %}
 head of the array ["a", "b", "c"] is "a"

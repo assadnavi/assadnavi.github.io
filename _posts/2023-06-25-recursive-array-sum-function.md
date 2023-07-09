@@ -4,7 +4,7 @@ title:  "Recursive array sum function"
 date:   2023-06-25 00:00:00 +0000
 published: true
 ---
-It is time for our second recursive function in vba. In this article, we will implement a recursive solution to sum numbers from an array. As our first recursive function, we will use the previously implemented helper functions  <a href="http://localhost:4000/2023/05/29/function-head-over-a-vba-array.html">head()</a>, <a href="http://localhost:4000/2023/06/05/function-tail-over-a-vba-array.html">tail()</a> and <a href="http://localhost:4000/2023/06/19/first-recursive-function-in-vba.html">isArrayEmpty()</a>. For reference, I have linked them to the articles containing their implementation. Here is logic we want to implement.
+It is time for our second recursive function in vba. In this article, we will implement a recursive solution to sum numbers from an array. As our first recursive function, we will use the previously implemented helper functions  <a href="https://www.functionalvba.com/2023/05/29/function-head-over-a-vba-array.html">head()</a>, <a href="https://www.functionalvba.com/2023/06/05/function-tail-over-a-vba-array.html">tail()</a> and <a href="https://www.functionalvba.com/2023/06/19/first-recursive-function-in-vba.html">isArrayEmpty()</a>. For reference, I have linked them to the articles containing their implementation. Here is logic we want to implement.
 <br/><br/>
 
 {% highlight cpp %}
