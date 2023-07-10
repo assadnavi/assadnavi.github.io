@@ -21,7 +21,11 @@
 title: Functional programming with VBA
 email: hello@assadnavi.ch
 description: >- # this means to ignore newlines until "baseurl:"
-  My description.
+  This website is aiming to provide VBA code of
+  functions that are frequently used by programmers.
+  The articles explore the functional programming principles, 
+  explain the functions logic and provide coding details about 
+  their implementation using recursion.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.functionalvba.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
