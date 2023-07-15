@@ -3,6 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: "VBA Articles"
+title: "List of Articles"
 list_title: " "
 ---
