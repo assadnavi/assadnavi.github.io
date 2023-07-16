@@ -32,14 +32,14 @@ The minimum of an array is only defined for non-empty arrays composed of number 
 
 As you can see in 5) we were able to rewrite the original problem statement 4) with a recursive definition of a smaller size. In recusion terminology, it is called the `induction step`. At runtime, to not apply the recursion indefinitively, we need to find a termination condition to our logic, which is called a `base case`. Our base case is when the array is of size 1, like our example in 2), the minimum value is its only value. 
 
-Now lets write this logic in VBA. We create a function `min` which takes an array parameters and returns its minimum value. To make it generic, we have used the type variant so that we can have arrays of integer or decimal numbers. There are two helpers functions, `minVal` which returns the minimum between two numbers and `size` which returns the size of an array. With this design, it is the responsibility of the caller to pass initialized data of the correct types to this function.
+Now lets write this logic in VBA. We create a function `min` which takes an array parameter as its input and returns a single value. To make it generic, we have used the type Variant so that we can use it with arrays of integer or decimal numbers. There are two helpers functions, `minVal` which returns the minimum between two numbers and `size` which returns the size of an array. With this solution, it is the responsibility of the caller to verify that the input array parameter is a non-empty array with numerical items.
 
 ### Here is the VBA implementation
 {% highlight vb %}
 Function min(xs As Variant) As Variant
     If size(xs) = 1 Then    ' base case
         min = head(xs)
-    Else                    ' inducation step
+    Else                    ' induction step
         min = minVal(head(xs), min(tail(xs)))
     End If
 End Function
