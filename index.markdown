@@ -5,4 +5,5 @@
 layout: home
 title: "List of Articles"
 list_title: " "
+canonical_url: 'https://www.functionalvba.com/index.html'
 ---
