@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: "List of Articles"
+#title: "List of Articles"
 list_title: " "
 canonical_url: 'https://www.functionalvba.com/index.html'
 ---
