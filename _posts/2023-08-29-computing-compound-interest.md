@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Computing compound interest"
+title:  "What is compound interest and how to compute it ?"
 date:   2023-08-29 00:00:00 +0000
 published: true
 ---
-In this article, we will use functional programming to solve a problem related to the financial topic. The goal of this article is to build a recursive solution to the yearly compounding interest problem and present a vba implementation for it. In a future article, we will improve this solution and provide the continuous compounding solution.
+In this article, we will use functional programming to solve a problem related to the financial topic. The goal of this article is to explain the process of a yearly interest compounding and build a recursive solution to its calculation. Additionally, we will present a vba implementation for it.
 <br/>
 <br/>
 ## What is a compound interest ?
-When investing money, the compound interest is the total money obtained at the end of the investment period including the re-investment of intermediate gains. As an example, assume we invest 100 USD for 2 years at an annual rate of 10%. What is the money we will have at the end of the second years ? Here is the calculation breakdown.
+When investing money, compound interest means that the intermediate gains are reinvested until the end of the investment period. As an example, assume we invest 100 USD for 2 years at an annual rate of 10%. What is the money we will have at the end of the second years ? Here is the calculation breakdown.
 
 {% highlight cpp %}
 Start of year 1 =>  Investing 100 USD
@@ -26,9 +26,8 @@ As you can see in this example, the compound interest accelerates the investment
 <br/>
 ## What is the mathematical formula ?
 In our solution, we will solve the generic problem which can be stated as : 
-{% highlight pseudo %}
-What is the final amount after investing X for Y years at an annual rate of R ?
-{% endhighlight %}
+
+**What is the final amount obtained after investing X for Y years at an annual rate of R ?**
 
 Here are the mathematical formulas for investment periods of 1 year, 2 years and more.
 
@@ -54,7 +53,7 @@ N = period of investment in years
 {% endhighlight %}
 <br/>
 ## Can we solve it recursively ?
-Yes! Let's look closely at the formula for N years (3), we can see that the solution of investing an extra year is always obtained by multiplying the result by `(1 + R)`. This fact can be used to build our `induction step`. For our recursion `base case`, we can use the formula (1). Now that we have the two elements required to build a recursive function, let's formalize it.
+Yes! Let's look closely at the formula for N years **(3)**, we can see that the solution of investing an extra year is always obtained by multiplying the result by `(1 + R)`. This fact can be used to build our `induction step`. For our recursion `base case`, we can use the formula **(1)**. Now that we have the two elements required to build a recursive function, let's formalize it.
 
 {% highlight pseudo %}
 A = invested amount
@@ -67,29 +66,30 @@ F(A, R, 1) = A * (1 + R)
 {% endhighlight %}
 <br/>
 ## VBA implementation
-The below implementation behaves correctly only when the parameter `years` is a positive integer. As an improvement, one can define this function to behave correctly also when the parameter `years` is set to 0. This improvement is left to the reader.
+This below implementation expects all the parameters : `amount`, `rate` and `years` to be positive. As an improvement, one can define this function to manage cases where the parameters are smaller than or equal to zero. This improvement is left to the reader.
 {% highlight vb %}
-Function calcInterest(amount As Long, rate As Double, years As Integer)
+Function invest(amount As Long, rate As Double, years As Integer)
 
     If (years = 1) Then
-        calcInterest = amount * (1 + rate)
+        invest = amount * (1 + rate)
     Else
-        calcInterest = calcInterest(amount, rate, years - 1) * (1 + rate)
+        invest = invest(amount, rate, years - 1) * (1 + rate)
     End If
 
 End Function
 {% endhighlight %}
 <br/>
-## How to use this function ?
+## Examples
+The below vba code uses the `invest()` function to compute the final amount obtained when investing 100 USD at the rate of 10 % for a period of 2 and 20 years. 
 {% highlight vb %}
 Sub main()
 
     Dim final_amount As Double
 
-    final_amount = calcInterest(100, 0.1, 2)
+    final_amount = invest(100, 0.1, 2)
     'final_amount is 121
 
-    final_amount = calcInterest(100, 0.1, 20)
+    final_amount = invest(100, 0.1, 20)
     'final_amount is 672.749994932561
 
 End Sub
