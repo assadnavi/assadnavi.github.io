@@ -12,7 +12,7 @@ A company revenue is the total income generated from the sales of goods or servi
 
 <br/>
 
-| Quarter | Revenue (in millions) |
+| Quarter | Revenue (in millions $) |
 | ------- | ------- |
 | Q1-2020      | 3543     
 | Q2-2020      | 2241     
@@ -58,9 +58,9 @@ A smoothing function aims to reduce the speed of change of the data it covers. B
 ## VBA code and examples
 This section is for readers interested either by reproducing the numbers used to draw the two graphs (Figure 1 and Figure 2) or by understanding how to code a program computing the smoothed quarterly revenue growths. As for the previous posts, the code implementation is following the functional programming principles and using recursive design.
 
-For the first type of reader, the below code can be copied in a VBA editor. By running the function **main()**, the variables **g** and **s** will be populated respectively with the quarterly revenue growths and their smoothed value. The variable **r** is initialized with UBER quarterly revenues since 2020, the numbers can be changed in case you want to apply this calculation for another set of data.
+For the first type of readers, the below code can be copied in a VBA editor. By running the function **main()**, the variables **g** and **s** will be populated respectively with the quarterly revenue growths and their smoothed value. The variable **r** is initialized with UBER quarterly revenues since 2020, the numbers can be changed in case you want to apply this calculation for another set of data.
 
-For the second type of reader, enjoy the ride :)
+For the second type of readers, enjoy the ride :)
 
 Thanks for reading. I hope this article helped you better understand how smoothing functions can be useful. If you have any comments or improvement suggestions <a href="mailto:hello@assadnavi.ch">get in touch</a>.
 
@@ -70,9 +70,9 @@ Thanks for reading. I hope this article helped you better understand how smoothi
 
 Sub main()
 
-    Dim r as Variant
+    Dim r As Variant
     Dim g As Variant
-    Dim s as Variant
+    Dim s As Variant
 
     r = Array(3543, 2241, 3129, 3165, 2903, 3929, 4845, 5778, 6854, 8073, 8343, 8607, 8823, 9230)
     ' r is an array containg UBER quarterly revenues since 2020
