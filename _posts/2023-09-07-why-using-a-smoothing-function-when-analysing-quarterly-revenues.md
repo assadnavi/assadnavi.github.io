@@ -8,8 +8,9 @@ In this article we will look at the publicly traded company UBER and analyse its
 
 <br/>
 ## What is a revenue and why is it important ?
-A company revenue is the total income generated from the sales of goods or services. The revenue of the company does not include the costs associated with its generation. It is an important information since its shows the ability of a company to expend and potentially gain market shares and therefore, with other factors, is used to estimate the company value. Publicly traded companies are releasing every 3 months quarterly results which includes their revenue for that period. We use the notation Q1-YYYY , ... , Q4-YYYY respectively for the months [Jan, Feb, Mar] , ... , [Oct, Nov, Dec] in the year YYYY. See below UBER revenues for each quarter since 2020.
+A company revenue is the total income generated from the sales of goods or services. The revenue of the company does not include the costs associated with its generation. It is an important information since its shows the ability of a company to expend and potentially gain market shares and therefore, with other factors, is used to estimate the company value. Publicly traded companies are releasing every 3 months quarterly results which includes their revenue for that period. We use the notation Q1-YYYY , ... , Q4-YYYY respectively for the months [Jan, Feb, Mar] , ... , [Oct, Nov, Dec] in the year YYYY. See below UBER revenues for each quarter since 2020. 
 
+(The below data can be downloaded in CSV format from the Resources section <a href="/resources.html">here</a>)
 <br/>
 
 | Quarter | Revenue (in millions $) |
