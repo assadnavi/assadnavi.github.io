@@ -13,7 +13,7 @@ This article aims to introduce the reader to a sorting algorithm called **quicks
 
 ## What is quicksort ?
 
-Quicksort is a **sorting** function (also called algorithm) which has the goal of sorting data. Data can be sorted in different ways, as an example a list of numbers can be sorted in an ascending or descending order. In this article we will implement the quicksort method to sort a list of numbers in an ascending order. See below the expected behaviour of our sorting function.
+Quicksort is a recursive **sorting** function (also called algorithm) which has the goal of sorting data. Data can be sorted in different ways, as an example a list of numbers can be sorted in an ascending or descending order. In this article we will implement the quicksort method to sort a list of numbers in an ascending order. See below the expected behaviour of our sorting function.
 
 {% highlight cpp %}
 1) Quicksort of the array [4, 5, 1] is the array [1, 4, 5]
@@ -27,8 +27,8 @@ Quicksort is a **sorting** function (also called algorithm) which has the goal o
 
 ## How does quicksort work ?
 
-Quicksort is a recursive function to sort an array of numbers. The function can be split into multiple steps. Let's present the steps and then look at a concrete example.
-1. If the array is empty, it is sorted. Otherwise go to step 2
+The quicksort function takes as an input an array of numbers, and returns its input sorted. Let's present its steps and then look at a concrete example.
+1. If the input array is empty, it is sorted. Otherwise go to step 2
 2. Select the first element of the array (called **pivot**)
 3. Find all the elements smaller or equal than the pivot (excluding the pivot)
 4. Find all the elements greater than the pivot
@@ -37,8 +37,8 @@ Quicksort is a recursive function to sort an array of numbers. The function can 
 See below a step-by-step example.
 {% highlight cpp %}
 quicksort of [5, 6, 2]
-1. Is the array empty (=sorted) ? If not, go to step 2
-2. The "pivot" is the number 5
+1. Is the input array empty (=sorted) ? No, go to step 2
+2. The "pivot" is : 5
 3. All the elements smaller or equal are : [2]
 4. All the elements greater than are : [6]
 5. Concatenating quicksort of [2], the pivot 5 and quicksort of [6] is [2, 5, 6]
