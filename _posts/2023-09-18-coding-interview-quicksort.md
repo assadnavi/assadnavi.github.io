@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Coding Interview | How to sort an array with quicksort ?"
+title:  "Interview Preparation #1 | How to sort an array with quicksort ?"
 date:   2023-09-18 00:00:00 +0000
 published: true
 ---
@@ -27,9 +27,11 @@ Quicksort is a recursive **sorting** function (also called algorithm) which has 
 
 ## How does quicksort work ?
 
-The quicksort function takes as an input an array of numbers, and returns its input sorted. Let's present its steps and then look at a concrete example.
-1. If the input array is empty, it is sorted. Otherwise go to step 2
-2. Select the first element of the array (called **pivot**)
+Quicksort takes as an input an array of elements, and returns its input sorted. The idea of the quicksort algorithm is the following : First it selects a **pivot** (the left-most element in the array), then it splits all the elements (except the pivot) into two partitions (1. elements smaller or equal than the pivot, 2. elements greater than the pivot). Once the partitions are obtained, it calls recursively quicksort on both of the partitions before concatenating the **sorted** partitions and the pivot.
+
+Here are the steps.
+1. Check if the input array is empty (if yes, it is sorted). If not, go to step 2
+2. Select the first element of the array (pivot)
 3. Find all the elements smaller or equal than the pivot (excluding the pivot)
 4. Find all the elements greater than the pivot
 5. Concatenate quicksort of (3), the pivot and quicksort of (4)
@@ -37,7 +39,7 @@ The quicksort function takes as an input an array of numbers, and returns its in
 See below a step-by-step example.
 {% highlight cpp %}
 quicksort of [5, 6, 2]
-1. Is the input array empty (=sorted) ? No, go to step 2
+1. Is the input array empty ? No, go to step 2
 2. The "pivot" is : 5
 3. All the elements smaller or equal are : [2]
 4. All the elements greater than are : [6]
