@@ -61,6 +61,7 @@ The quicksort function uses the below helper functions to manipulate arrays. Tho
 - **concat(xs, ys)** : returns a new array containing, in order, all the elements of the array **xs** and all the elements of the array **ys**
 - **head(xs)** : returns the first element of the array **xs**
 - **tail(xs)** : returns a new array containing all the elements of the array **xs** except its first element
+- **size(xs)** : returns the size of the array **xs**
 - **smallerOrEqualThan(x, xs)** : returns a new array with all the elements of **xs** that are smaller or equal than **x**
 - **greaterThan(x, xs)** : returns a new array with all the elements of **xs** that are greater than **x**
 
@@ -147,7 +148,7 @@ End Function
 ## VBA examples
 This section shows examples of how the quicksort function, defined above, can be used.
 
-Thanks for reading. I hope you have learnt something and this article helped you better understand how quicksort works. If you have any questions or improvement suggestions, don't hesitate to <a href="mailto:hello@assadnavi.ch">contact me</a>
+Thanks for reading. I hope you have learnt something and this article helped you better understand how quicksort works. If you have any questions or comments, don't hesitate to <a href="mailto:hello@assadnavi.ch">contact me</a>
 
 
 {% highlight vb %}
