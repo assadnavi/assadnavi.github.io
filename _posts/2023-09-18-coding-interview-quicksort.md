@@ -43,7 +43,7 @@ Quicksort is a recursive **sorting** function (also called algorithm) which has 
 
 <br/>
 
-## How does quicksort work ?
+## How does it work ?
 
 Quicksort takes as an input an array of elements, and returns its input sorted. The idea of the quicksort algorithm is the following : First it selects a **pivot** (the left-most element in the array), then it splits all the elements (except the pivot) into two partitions (1. elements smaller or equal than the pivot, 2. elements greater than the pivot). Once the partitions are obtained, it calls recursively quicksort on both of the partitions before concatenating the **sorted** partitions and the pivot.
 
@@ -70,7 +70,7 @@ The result of step 5 is the sorted array [2, 5, 6]
 
 <br/>
 
-## Quicksort code
+## Coding quicksort(...)
 
 This section aims to present an implementation of the quicksort algorithm in vba which follows the functional programming principles. The below code contains all the auxiliary functions and can be run on your machine simply by copying and pasting it in your coding environment.
 
