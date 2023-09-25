@@ -5,23 +5,41 @@ date:   2023-09-18 00:00:00 +0000
 published: true
 ---
 
+## Code challenge
+
+Given an array of numbers, write the function **quicksort(...)** which sorts in ascending order the input with the quicksort method.
+
+- The difficulty of this challenge is ranked as : **Advanced**
+- The topic of this challenge is categorized as : **Algorithm**
+
+<br/>
+
+## Expected output
+
+{% highlight cpp %}
+
+1) Quicksort of the array [4, 5, 1] is the array [1, 4, 5]
+
+2) Quicksort of the array [] is the array []
+
+3) Quicksort of the array [-1, 10, -2] is the array [-2, -1, 10]
+
+{% endhighlight %}
+
+<br/>
+
 ## For whom is this article ?
 
-This article aims to introduce the reader to a sorting algorithm called **quicksort**. This article presents the quicksort method alongside with its code implementation. It is addressed to people having already acquired the basics of coding and are aiming to either prepare for a coding interview or to improve their coding skills by learning the quicksort algorithm.
+This article aims to introduce the reader to a sorting algorithm called **quicksort**. It presents the quicksort method alongside with its code implementation and is addressed to the follwing people :
+- People preparing for coding interviews
+- People aiming to improve their coding skills by learning the quicksort algorithm
+- People interested in algorithms and recursive thinking
 
 <br/>
 
 ## What is quicksort ?
 
 Quicksort is a recursive **sorting** function (also called algorithm) which has the goal of sorting data. Data can be sorted in different ways, as an example a list of numbers can be sorted in an ascending or descending order. In this article we will implement the quicksort method to sort a list of numbers in an ascending order. See below the expected behaviour of our sorting function.
-
-{% highlight cpp %}
-1) Quicksort of the array [4, 5, 1] is the array [1, 4, 5]
-
-2) Quicksort of the array [] is the array []
-
-3) Quicksort of the array [-1, 10, -2] is the array [-2, -1, 10]
-{% endhighlight %}
 
 <br/>
 
