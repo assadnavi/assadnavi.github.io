@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Interview Preparation #1 | How to sort an array with quicksort ?"
+title:  "#1 Interview Preparation | How to sort an array with quicksort ?"
 date:   2023-09-18 00:00:00 +0000
 published: true
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Interview Preparation #2 | How to find the smallest element of an array ?"
+title:  "#2 Interview Preparation | How to find the smallest element of an array ?"
 date:   2023-09-22 00:00:00 +0000
 published: true
 ---
@@ -10,16 +10,7 @@ published: true
 Given a non-empty array of numbers, write a recursive function **min(...)** which returns the smallest element of the input array.
 
 - The difficulty of this challenge is ranked as : **Intermediate**
-- The topic of this challenge is categories as : **Algorithm**
-
-<br/>
-
-## For whom is this article ?
-
-In this article, we look at an algorithm to find the smallest element of an array of numbers. We provide a coding solution implemented in VBA using the functional programming principles. This article is addressed to the follwing people :
-
-- People preparing for coding interviews
-- People interested in algorithms and recursive thinking
+- The topic of this challenge is categorized as : **Algorithm**
 
 <br/>
 
@@ -37,6 +28,15 @@ In this article, we look at an algorithm to find the smallest element of an arra
 
 <br/>
 
+## For whom is this article ?
+
+In this article, we look at an algorithm to find the smallest element of an array of numbers. We provide a coding solution implemented in VBA using the functional programming principles. This article is addressed to the follwing people :
+
+- People preparing for coding interviews
+- People interested in algorithms and recursive thinking
+
+<br/>
+
 ## Building the solution
 
 **Note** : Readers willing to solve this challenge by themselves should stop reading here. Below this point, the solution will be discussed and implemented.
@@ -45,9 +45,9 @@ When trying to solve a problem recursively, we need to find a smaller problem th
 
 {% highlight cpp %}
 
-4) min([4, 5, 1]) = Math.minimum(4, min([5, 1]))
+4) min([4, 5, 1]) <=> Math.minimum(4, min([5, 1]))
 
-5) min([-5]) = -5
+5) min([-5]) <=> -5
 
 {% endhighlight %}
 
