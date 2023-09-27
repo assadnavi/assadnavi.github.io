@@ -5,9 +5,9 @@ date:   2023-09-27 00:00:00 +0000
 published: true
 ---
 
-## Introduction
+## What is the purpose of this coding quiz ?
 
-This article is aiming to prepare programmers to corporate coding interview where they can be asked to read a piece of code before explaining what it does and answering questions about it. This article is aiming to proceed in a similar way. It is addressed primarily to the follwing people :
+This coding quiz is aiming to prepare programmers to corporate coding interview where they can be asked to read a piece of code before explaining what it does and answering questions about it. It is aiming to proceed in a similar way and is addressed primarily to the follwing people :
 
 - People preparing for coding interviews
 - People willing to evaluate their coding skills
@@ -68,12 +68,12 @@ is 0 < 1 ? Yes => 55
 
 {% endhighlight %}
 
-The function **f(x, a)** is a recursive function summing the numbers from 1 to **x**. This sum is also called the **Gaussian sum**. The second parameter **a** is called an accumulator and is used to store the intermediate results. The final result of the evaluation of **f(10, 0)** is **55**.
+The function **f(x, a)** is a recursive function summing the numbers from 1 to **x** (1 + 2 + 3 + ... + x). This sum is also called the **Gaussian sum**. The second parameter **a** is called an accumulator and is used to store the intermediate results. The final result of the evaluation of **f(10, 0)** is **55**.
 
 <br/>
 
 ## Question \#2
-Is it possible to rewrite the code of function **f(...)** such that it does not use the parameter **a** ?
+Is it possible to change the code of function **f(...)** such that it does not use the parameter **a** ?
 
 <br/>
 
