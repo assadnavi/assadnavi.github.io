@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Functional programming with VBA
+title: Prepare your next coding interview
 email: hello@assadnavi.ch
 description: >- # this means to ignore newlines until "baseurl:"
   This website is aiming to provide code challenges to prepare programmers to corporate coding interviews.
