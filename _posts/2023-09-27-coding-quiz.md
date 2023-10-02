@@ -15,7 +15,7 @@ This coding quiz is aiming to prepare programmers to corporate coding interview 
 Additionally information :
 - The difficulty of this challenge is ranked as : **Beginner**
 - The topic of this challenge is categorized as : **Algorithm**
-- Programming language used  : **JavaScript**
+- Programming language : **JavaScript**
 
 <br/>
 
@@ -73,7 +73,7 @@ The function **f(x, a)** is a recursive function summing the numbers from 1 to *
 <br/>
 
 ## Question \#2
-Is it possible to change the code of function **f(...)** such that it does not use the parameter **a** ?
+Is it possible to change the code of the function **f(...)** such that it does not use the parameter **a** ?
 
 <br/>
 
