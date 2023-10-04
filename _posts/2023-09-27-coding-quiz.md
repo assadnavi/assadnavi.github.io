@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "#4 Interview Preparation | Coding quiz"
+title:  "#4 Interview Preparation | 'Code comprehension' series"
 date:   2023-09-27 00:00:00 +0000
 published: true
 ---
 
-## What is the purpose of this coding quiz ?
+## What is the purpose of this article ?
 
-This coding quiz is aiming to prepare programmers to corporate coding interviews where they can be asked to read a piece of code before explaining what it does and answering questions about it. It is aiming to proceed in a similar way and is addressed primarily to the following people :
+The 'Code comprehension' series is aiming to prepare programmers to corporate coding interviews where they can be requested to read, explain and answer questions about a piece of code. This article is aiming to proceed in a similar way and is addressed primarily to the following people :
 
 - People preparing for coding interviews
 - People willing to evaluate their coding skills

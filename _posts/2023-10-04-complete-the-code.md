@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "#6 Interview Preparation | Complete the code"
+title:  "#6 Interview Preparation | 'Complete the code' series "
 date:   2023-10-04 00:00:00 +0000
 published: true
 ---
 
 ## What is the purpose of this article ?
 
-The series "Complete the code" is aiming to prepare programmers to coding interviews where they are requested to complete a piece of code to perform a specific task. This article proceeds in a similar way by presenting 3 codes containing gaps to be filled by the reader. This challenge is addressed primarily to the following people :
+The 'Complete the code' series is aiming to prepare programmers to coding interviews where they are requested to complete a piece of code to perform a specific task. This article proceeds in a similar way by presenting 3 codes containing gaps to be filled by the reader. This challenge is addressed primarily to the following people :
 
 - People preparing for coding interviews
 - People willing to evaluate their coding skills
