@@ -7,7 +7,7 @@ published: true
 
 ## What is the purpose of this coding quiz ?
 
-This coding quiz is aiming to prepare programmers to corporate coding interview where they can be asked to read a piece of code before explaining what it does and answering questions about it. It is aiming to proceed in a similar way and is addressed primarily to the follwing people :
+This coding quiz is aiming to prepare programmers to corporate coding interviews where they can be asked to read a piece of code before explaining what it does and answering questions about it. It is aiming to proceed in a similar way and is addressed primarily to the following people :
 
 - People preparing for coding interviews
 - People willing to evaluate their coding skills

@@ -30,7 +30,7 @@ Given an array of numbers, write the function **quicksort(...)** which sorts in 
 
 ## For whom is this article ?
 
-This article aims to introduce the reader to a sorting algorithm called **quicksort**. It presents the quicksort method alongside with its code implementation and is addressed to the follwing people :
+This article aims to introduce the reader to a sorting algorithm called **quicksort**. It presents the quicksort method alongside with its code implementation and is addressed to the following people :
 - People preparing for coding interviews
 - People aiming to improve their coding skills by learning the quicksort algorithm
 - People interested in algorithms and recursive thinking

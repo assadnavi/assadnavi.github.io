@@ -30,7 +30,7 @@ Given a non-empty array of numbers, write a recursive function **min(...)** whic
 
 ## For whom is this article ?
 
-In this article, we look at an algorithm to find the smallest element of an array of numbers. We provide a coding solution implemented in VBA using the functional programming principles. This article is addressed to the follwing people :
+In this article, we look at an algorithm to find the smallest element of an array of numbers. We provide a coding solution implemented in VBA using the functional programming principles. This article is addressed to the following people :
 
 - People preparing for coding interviews
 - People interested in algorithms and recursive thinking

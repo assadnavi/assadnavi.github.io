@@ -30,7 +30,7 @@ Given two arrays of numbers **xs** and **ys**, write a function **concatenate(..
 
 ## For whom is this article ?
 
-In this article, we look at an algorithm to concatenate all the elements from two arrays of numbers. A recursive solution is discussed and a possible implementation is provided in VBA using the functional programming principles. The solution logic is language agnostic meaning that it can easily be translated to another programming language. This article is addressed to the follwing people :
+In this article, we look at an algorithm to concatenate all the elements from two arrays of numbers. A recursive solution is discussed and a possible implementation is provided in VBA using the functional programming principles. The solution logic is language agnostic meaning that it can easily be translated to another programming language. This article is addressed to the following people :
 
 - People preparing for coding interviews
 - People interested in algorithms

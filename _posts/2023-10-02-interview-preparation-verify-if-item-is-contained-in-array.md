@@ -31,7 +31,7 @@ Given a number **n** and an array of numbers **xs**, write a function **containe
 
 ## For whom is this article ?
 
-In this article, we look at an algorithm to check if an element is contained in an array. A recursive solution is discussed and an implementation is presented in **JavaScript** using the functional programming principles (FP). The reader should not necessarily write a recrusive method to complete this challenge. The solution logic is language agnostic meaning that it can easily be translated to another programming language. This article is addressed to the follwing people :
+In this article, we look at an algorithm to check if an element is contained in an array. A recursive solution is discussed and an implementation is presented in **JavaScript** using the functional programming principles (FP). The reader should not necessarily write a recrusive method to complete this challenge. The solution logic is language agnostic meaning that it can easily be translated to another programming language. This article is addressed to the following people :
 
 - People preparing for coding interviews
 - People interested in algorithms
