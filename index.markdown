@@ -5,5 +5,5 @@
 layout: home
 title: "Posts"
 #list_title: "Posts"
-#canonical_url: 'https://www.functionalvba.com/index.html'
+#canonical_url: 'https://www.interviewpuzzler.com/index.html'
 ---

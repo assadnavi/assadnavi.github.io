@@ -48,7 +48,7 @@ Function even(xs As Variant) As Variant
 End Function
 {% endhighlight %}
 <br/>
-We use the function `isArrayEmpty` to detect the base case of our recursion. If not, we add the even number to the result of the recursive call. To build a new array with only the even numbers, we use the function `cons`. As a reference, you can look at the articles related to those functions here : <a href="https://www.functionalvba.com/2023/05/29/function-head-over-a-vba-array.html">head()</a>, <a href="https://www.functionalvba.com/2023/06/05/function-tail-over-a-vba-array.html">tail()</a>, <a href="https://www.functionalvba.com/2023/06/19/first-recursive-function-in-vba.html">isArrayEmpty()</a> and <a href="https://www.functionalvba.com/2023/06/12/what-can-be-cons-in-vba.html">cons()</a>
+We use the function `isArrayEmpty` to detect the base case of our recursion. If not, we add the even number to the result of the recursive call. To build a new array with only the even numbers, we use the function `cons`. As a reference, you can look at the articles related to those functions here : <a href="/2023/05/29/function-head-over-a-vba-array.html">head()</a>, <a href="/2023/06/05/function-tail-over-a-vba-array.html">tail()</a>, <a href="/2023/06/19/first-recursive-function-in-vba.html">isArrayEmpty()</a> and <a href="/2023/06/12/what-can-be-cons-in-vba.html">cons()</a>
 
 ### How to use this function in vba ?
 {% highlight vb %}
