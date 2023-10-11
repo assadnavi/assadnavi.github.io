@@ -6,6 +6,7 @@ layout: page
 title: "Resources"
 #list_title: "Data"
 #canonical_url: 'https://www.interviewpuzzler.com/index.html'
+published: false
 ---
 This section has the goal to provide all the data used in the articles so that the readers can reproduce all the calculations. The data is provided in CSV format and has been compiled from multiple documents found in the "Financials" section of the relevant companies websites.
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Why using a smoothing function when analysing quarterly revenues ?"
 date:   2023-09-07 00:00:00 +0000
-published: true
+published: false
 ---
 In this article we will look at the publicly traded company UBER and analyse its quarterly revenues. To do so, we will compute the revenue growths and discuss the reasons to use a **smoothing** function. This article provides the definition of the smoothing function **moving average** and shows its impact. Additionally, we present a code in VBA allowing the readers to reproduce the presented results and have a formal definition of the calculation logic.
 

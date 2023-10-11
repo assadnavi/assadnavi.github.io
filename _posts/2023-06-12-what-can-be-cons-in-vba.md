@@ -2,7 +2,7 @@
 layout: post
 title:  "What can be cons() in vba ?"
 date:   2023-06-12 00:00:00 +0000
-published: true
+published: false
 ---
 The last tool we need before solving our first problem with a recursive approach is `cons`. In functional programming, `cons` is a datastructure which holds a pair of things (I say 'things' because they can be either a value or a reference). A cons is simply a pair (a, b). This datastructure can be used to represent a list of items. See below an example.
 <br/><br/>

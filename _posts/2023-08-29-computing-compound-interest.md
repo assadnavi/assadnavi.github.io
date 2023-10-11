@@ -2,7 +2,7 @@
 layout: post
 title:  "What is compounding interest and how to compute it ?"
 date:   2023-08-29 00:00:00 +0000
-published: true
+published: false
 ---
 In this article, we present and explain the impact that compounding interest can have on a financial investment. We present a recursive solution to its calculation and provide a vba code allowing the readers to compute it for their own scenarios.
 

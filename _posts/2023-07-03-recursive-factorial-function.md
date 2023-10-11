@@ -2,7 +2,7 @@
 layout: post
 title:  "Recursive factorial function"
 date:   2023-07-01 00:00:00 +0000
-published: true
+published: false
 ---
 Hello everyone, it is now time to look at another type of recursive function. The general pattern is the same, we try to solve the general problem by solving recursively a smaller part of the problem, but this time it will be related to a mathematical function which will not require any array manipulations. Therefore we wont need the help of the previously defined functions `head`, `tail` and `isArrayEmpty`. In this article we will look at implementing the factorial function in vba with a functional programming style using recursion. First, what is the factorial function ? Some examples below.
 <br/><br/>

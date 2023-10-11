@@ -2,7 +2,7 @@
 layout: post
 title:  "First recursive function in vba"
 date:   2023-06-19 00:00:00 +0000
-published: true
+published: false
 ---
 Finally we got to the point where we can write our first recursive function. In this article, we will write a recursive function in vba to solve the array membership problem, which can be stated as : For a given array and value, is the value contained in the array ? You can see the logic of the function below.
 <br/><br/>

@@ -2,7 +2,7 @@
 layout: post
 title:  "How to filter even numbers ?"
 date:   2023-07-09 00:00:00 +0000
-published: true
+published: false
 ---
 Hello, in this article we will write a function in vba to filter even numbers from an array. We will use functional programming principles and write a solution using recursion. Before diving into the problem, lets first discuss about the two functional programming principles.<br/>
 1) `No side effect` : This means that the function we are going to implement will not change any of its input but rather build its output from scratch. This principle enforces the code to not have any 'change of state' which are error prone and hard to debug.<br/>

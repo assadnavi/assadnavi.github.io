@@ -6,10 +6,6 @@ layout: null
   <url>
     <loc>{{ site.url }}</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-  </url>  
-  <url>
-    <loc>{{ site.url }}/resources</loc>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
   </url>   
   {% for post in site.posts %}
     {% unless post.published == false %}    

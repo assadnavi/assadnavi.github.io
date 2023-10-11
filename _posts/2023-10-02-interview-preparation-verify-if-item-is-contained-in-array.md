@@ -51,7 +51,7 @@ In this section, the aim is to write the **contained(...)** function logic in a 
 
 <=>
 
-4) When 1 = 3 then true otherwise contained (1, [4, 1])
+4) When 1 = 3 then true otherwise contained(1, [4, 1])
 
 5) contained(n, []) is false
 
