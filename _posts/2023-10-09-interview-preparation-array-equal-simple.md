@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "#7 Interview Preparation | Are those two arrays identical ?"
-date:   2023-10-09 00:00:00 +0000
-published: false
+title:  "#7 Interview Preparation | Are those two arrays equal ?"
+date:   2023-10-16 00:00:00 +0000
+published: true
 ---
 <style>
   .solution pre {
@@ -14,25 +14,25 @@ published: false
 
 ## Introduction
 
-In this article, we present a coding challenge for readers willing to prepare for coding interviews. A recursive solution to this challenge is discussed and an implementation is presented in **JavaScript** using the functional programming principles (FP). The reader should not necessarily write a recrusive method to complete this challenge. The solution logic is language agnostic meaning that, when understood, it can easily be translated to another programming language. This article is addressed to the following people :
+In this article, we present a coding challenge for readers willing to prepare for coding interviews. A solution to this challenge is discussed and an implementation is presented in **JavaScript** using the functional programming principles (FP). The solution logic is language agnostic meaning that the building blocks can easily be translated to another programming language. This article is addressed to the following people :
 
 - People preparing for coding interviews
 - People willing to evaluate their coding skills
-- People interested by coding challenge
+- People interested in functional programming (FP)
 
 <br/>
 
-## About the challenge
+## About this challenge
 
-- The difficulty of this challenge is ranked as : **Beginner**
-- The topic of this challenge is categorized as : **Data Structure**
-- The solution of this challenge is presented in : **JavaScript**
+- The difficulty of this challenge is ranked as **Beginner**
+- The topic of this challenge is categorized as **Data Structure**
+- The solution of this challenge is presented in **JavaScript**
 
 <br/>
 
 ## Question
 
-Given two arrays of numbers, **xs** and **ys**, write a function **arrayEqual(xs, ys)** returning true when **xs** and **ys** containt exactly the same elements and in the same order, otherwise false. This challenge should be completed without using any similar built-in functions already available to the programmer.
+Given two arrays of numbers, **xs** and **ys**, write a function **arrayEqual(xs, ys)** returning true when **xs** and **ys** contain exactly the same elements and in the same order, otherwise false. This challenge should be completed without using any similar built-in functions already available to the programmer.
 
 <br/>
 
@@ -56,17 +56,22 @@ Given two arrays of numbers, **xs** and **ys**, write a function **arrayEqual(xs
 
 **Note** : Readers willing to solve this challenge by themselves should stop reading here. Below this point the solution is discussed and the solution presented.
 
-The logic of the **arrayEqual(...)** function should cover those four cases.
+The logic of the function **arrayEqual(...)** should cover those four cases.
 
 **case 1)** When the two arrays have different size, return false
 
 **case 2)** When the two arrays are empty, return true
 
-**case 3)** When the first element of the arrays are **not** equal, return false
+**case 3)** When the first elements of the arrays are **not** equal, return false
 
-**case 4)** When the first element of the arrays are equal, apply this logic recursively over the rest of the array elements.
+**case 4)** When the first elements of the arrays are equal, apply this logic recursively over the rest of the elements.
 
-See below this logic applied for statement **(1)** from section **Samples output**. The code execution stops at **(1.2)** returning false because 4 is not equal to 5.
+See below this logic applied for statement **(1)** from section **Samples output**. The below expansion shows the recursive nature of the solution. Its evaluation returns **false** since 4 is not equal to 5.
+
+**Notes :** 
+- 'x == y' is a shorthand notation for 'is x equal to y ?'
+- 'and' is the binary logical operator
+- 'a <=> b' says that the evaluation of **a** is equal to the evaluation of **b**
 
 {% highlight cpp %}
 
@@ -74,11 +79,11 @@ See below this logic applied for statement **(1)** from section **Samples output
 
 <=>
 
-1.1) when 1 != 1 false otherwise arrayEqual([4], [5])
+(1 == 1) and arrayEqual([4], [5])
 
 <=>
 
-1.2) when 4 != 5 false otherwise arrayEqual([], [])
+(1 == 1) and (4 == 5) and arrayEqual([], [])
 
 {% endhighlight %}
 
@@ -86,7 +91,7 @@ See below this logic applied for statement **(1)** from section **Samples output
 
 ## Final code for arrayEqual(...)
 
-This section aims to present the final solution for the function **arrayEqual(xs, ys)**. The below code is complete and contains all the helper functions. It can be run on your machine by copying and pasting it in your coding environment (for instance : nodejs). To reproduce the outputs from the section **Sample output**, run the entire code below, the results will be displayed in the output console.
+This section aims to present the final solution for the function **arrayEqual(xs, ys)**. The below code is complete and contains all the helper functions. It can be run on your machine by copying and pasting it in your coding environment. To reproduce the outputs from the section **Sample output** run the entire code below with a JavaScript interpreter (e.g. NodeJS), the results will be displayed in the output console.
 
 **arrayEqual(xs, ys)** uses the below helper functions. Those functions do not have any side effects.
 
