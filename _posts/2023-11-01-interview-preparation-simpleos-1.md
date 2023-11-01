@@ -78,7 +78,7 @@ To represent a <b>folder</b> with subfolders, we reuse the same structure define
 
 <br/>
 
-<h3>To Do</h3>
+<h3>Your Task</h3>
 
 Given a folder <b>f</b> as an input, write a JavaScript function <b>show(f)</b> printing on the console the folder <b>f</b>. See in section <b>Output</b> below the expected print format. The function <b>show(f)</b> should be able to print any folder representation regardless of the number of subfolder levels. You can assume that <b>f</b> is always a valid folder structure.
 
