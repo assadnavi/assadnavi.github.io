@@ -79,8 +79,6 @@ This below implementation expects all the parameters : `amount`, `rate` and `yea
 
 The below code uses the function `invest()` to compute the amount obtained by the investor after investing $100 at the annual rate of 10 % for a period of 2 and 20 years. This code can be amended to fit your scenarios.
 
-Thanks for reading. I hope you have learnt something and this article helped you better understand how to think recursively. If you have any comments or improvement suggestions <a href="mailto:hello@assadnavi.ch">get in touch</a>
-
 <br/>
 
 {% highlight vb %}

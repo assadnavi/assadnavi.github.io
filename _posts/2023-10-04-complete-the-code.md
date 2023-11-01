@@ -144,6 +144,3 @@ function year(d) {
 
 {% endhighlight %}
 
-<br/>
-
-Thanks for reading. I hope you have learnt something while working on this "Complete the code" article. If you have any questions or comments, don't hesitate to <a href="mailto:hello@assadnavi.ch">contact me</a>.

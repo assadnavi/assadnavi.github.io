@@ -63,8 +63,6 @@ For the first type of readers, the below code can be copied in a VBA editor. By 
 
 For the second type of readers, enjoy the ride :)
 
-Thanks for reading. I hope this article helped you better understand how smoothing functions can be useful. If you have any comments or improvement suggestions <a href="mailto:hello@assadnavi.ch">get in touch</a>.
-
 <br/>
 
 {% highlight vb %}

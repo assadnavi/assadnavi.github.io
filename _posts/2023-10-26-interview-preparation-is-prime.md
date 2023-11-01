@@ -15,8 +15,6 @@ published: true
 
 ## Introduction
 
-In this article, we present a code challenge for readers willing to prepare for professional coding interviews. A solution to this challenge is discussed and an implementation is presented in JavaScript using the functional programming principles when possible. The solution logic is language agnostic meaning that the building blocks can easily be translated to another programming language. This article aims to follow the same procedure used in a professional coding interview. See below some information regarding this challenge.
-
 *For whom is this code challenge ?*
 
 - People preparing for coding interviews or willing to improve their coding skills.
@@ -92,4 +90,4 @@ function isPrime(x) {
 </div>
 
 <br/>
-Thanks for reading. I hope you have learnt something while working on this challenge. If you have any questions or comments, don't hesitate to <a href="mailto:hello@assadnavi.ch">contact me</a>.
+

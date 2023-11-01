@@ -98,5 +98,3 @@ r([10, 20, 11, 12])
 
 As shown above in the execution breakdown, the output of the evaluation of **r([10, 20, 11, 12])** returns the array [12, 11, 20, 10]. More generally, the function **r(xs)** reverses the order of the elements of its input **xs**.
 
-<br/>
-Thanks for reading. I hope you have learnt something while working on this 'Code comprehension' article. If you have any questions or comments, don't hesitate to <a href="mailto:hello@assadnavi.ch">contact me</a>.

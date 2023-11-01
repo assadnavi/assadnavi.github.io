@@ -60,5 +60,3 @@ Sub main()
 
 End Sub
 {% endhighlight %}
-<br/>
-Thanks for reading. I hope you have learnt something and this article helped you better understand how to think recursively. If you have any comments or improvement suggestions <a href="mailto:hello@assadnavi.ch">get in touch</a>

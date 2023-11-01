@@ -69,8 +69,6 @@ The min(...) function uses the below helper functions. Those functions do not ha
 - **size(xs)** : returns the size of the array **xs**
 - **math_minimum(a, b)** : returns the mathematically smallest element between **a** and **b**
 
-Thanks for reading. I hope you have learnt something while working on this code challenge. If you have any questions or comments, don't hesitate to <a href="mailto:hello@assadnavi.ch">contact me</a>
-
 <br/>
 
 {% highlight vb %}

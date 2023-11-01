@@ -134,6 +134,4 @@ function size(xs) {
 {% endhighlight %}
 </div>
 
-<br/>
 
-Thanks for reading. I hope you have learnt something while working on this code challenge. If you have any questions or comments, don't hesitate to <a href="mailto:hello@assadnavi.ch">contact me</a>

@@ -72,8 +72,6 @@ The contained(...) function uses the below helper functions. Those functions do 
 - **tail(xs)** : returns a new array containing all the elements of the array **xs** except its first element
 - **size(xs)** : returns the size of the array **xs**
 
-Thanks for reading. I hope you have learnt something while working on this code challenge. If you have any questions or comments, don't hesitate to <a href="mailto:hello@assadnavi.ch">contact me</a>
-
 <br/>
 
 {% highlight js %}
