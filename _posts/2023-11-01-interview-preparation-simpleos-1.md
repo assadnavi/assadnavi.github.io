@@ -6,7 +6,7 @@ published: true
 ---
 
 <style>
-  .solution pre {
+  .code-solution pre {
     border-width:2px; 
     border-style:solid;
     border-color:green;
@@ -23,7 +23,7 @@ You are invited for a first interview at the company SimpleOS. You meet the firs
 
 [Ask a hint](#hint)
 
-[Submit your solution](#solution)
+[Your solution is ready](#solution)
 
 <br/>
 
@@ -112,7 +112,7 @@ root
 <details closed>
   <summary>Click to view</summary>
   <br/>
-  After 20 minutes, Orolo comes back to the room to verify that you can work comfortably with the computer and asks you if you need anything. You mentioned that the computer setup is great and the question is very clear. You also indicate that you made some progress but, if possible, will be nice to get a small help to finalize your solution. Orolo states that it is possible and suggests you to read <a href="https://en.wikipedia.org/wiki/Depth-first_search" target="_blank">this</a>.
+  After 20 minutes, Orolo comes back to the room to verify that you can work comfortably with the computer and asks you if you need anything. You mentioned that the computer setup is great and the question is very clear. You also indicate that you made some progress but, if possible, will be nice to get a small help to finalize your solution. Orolo states that it is possible and suggests you to read <a href="https://en.wikipedia.org/wiki/Depth-first_search" target="_blank">this</a>. He then leaves you alone in the room.
 </details>
 
 <br/>
@@ -122,7 +122,10 @@ root
 <details closed>
   <summary>Click to view</summary>
   <br/>
-  <div class="solution">
+  After 90 minutes, Orolo comes back to the room and ask you how it wend. You discuss with him the question and mention how you tried to solve it. Orolo listen carefully about your code design. He says that he has with him one potential solution to the challenge. He shows it and you both start comparing it with your solution.
+  <br/>
+  <br/>
+  <div class="code-solution">
   {% highlight js %}
   function show(f) {
     showCalc(f, 0)
