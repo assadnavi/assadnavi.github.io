@@ -122,7 +122,7 @@ root
 <details closed>
   <summary>Click to view</summary>
   <br/>
-  After 90 minutes, Orolo comes back to the room and ask you how it wend. You discuss with him the question and mention how you tried to solve it. Orolo listen carefully about your code design. He says that he has with him one potential solution to the challenge. He shows it and you both start comparing it with your solution.
+  After 90 minutes, Orolo comes back to the room and ask you how it went. You discuss with him the question and mention how you tried to solve it. Orolo listen carefully about your code design. He says that he has with him one potential solution to the challenge. He shows it and you both start comparing it with your solution.
   <br/>
   <br/>
   <div class="code-solution">
