@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "#11 Interview Preparation | 2nd coding interview with SimpleOS"
-date:   2023-11-01 00:00:00 +0000
+date:   2023-11-10 00:00:00 +0000
 published: true
 ---
 
