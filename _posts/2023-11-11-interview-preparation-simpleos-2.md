@@ -20,26 +20,11 @@ SimpleOS has been impressed with the solution you have provided in the first int
 
 [Your solution is ready](#solution)
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="/assets/sep_1.png"/>
+<img src="/assets/sep_1.png"/>
+<img src="/assets/sep_1.png"/>
+<img src="/assets/sep_1.png"/>
+<img src="/assets/sep_1.png"/>
 
 <span id="open-envelope"></span>
 
@@ -53,19 +38,19 @@ In SimpleOS, a **folder** is represented with a structure with attributes **name
 
 **(Ref 1)**
 
-{% highlight js %}
+```js
 {
   "name"    : "root",
   "files"   : ['readme.txt', 'hello.txt'],
   "subfolders" : []
 }
-{% endhighlight %}
+```
 
 To represent a **folder** with subfolders, we reuse the same structure defined above in the attribute **subfolders**. This can represent any number of subfolder levels. See below a JSON representation of a folder containing two levels of subfolders.
 
 **(Ref 2)**
 
-{% highlight js %}
+```js
 {
   "name"    : "root",
   "files"   : ['readme.txt', 'hello.txt'],
@@ -87,13 +72,13 @@ To represent a **folder** with subfolders, we reuse the same structure defined a
       ]
     }] 
 }
-{% endhighlight %}
+```
 
 ### Your Task
 
-Given a folder **f** as an input, write a JavaScript function **sort_asc(f)** sorting the folder **f** ascendingly (also called the lexicographic order). The function **sort_asc(f)** does not change **f** but builds and returns a new folder structure with its elements sorted. The function **sort_asc(f)** should be able to sort any folder representation regardless of the number of subfolder levels. You are also provided with the code of the function **show(f)** which can be found <a href="/2023/11/01/interview-preparation-simpleos-1.html">here</a> (solution of the 1st interview with SimpleOS). As an example, when evaluating **show(sort_asc(f))** with **f = (Ref 2)**, the result should be :
+Given a folder **f** as an input, write a JavaScript function **sort_asc(f)** sorting the folder **f** ascendingly (also called the lexicographic order). The function **sort_asc(f)** does not change **f** but builds and returns a new folder structure with its elements sorted. The function **sort_asc(f)** should be able to sort any folder representation regardless of the number of subfolder levels. You are also provided with the code of the function **show(f)** which can be found <a href="https://www.interviewpuzzler.com/assets/show.js">here</a>. As an example, when evaluating **show(sort_asc(f))** with **f = (Ref 2)**, the result should be :
 
-{% highlight js %}
+```js
 root
 ..hello.txt
 ..readme.txt
@@ -107,30 +92,15 @@ root
 ....vid1.mpeg
 ....vid2.mpeg
 ....vid3.mpeg
-{% endhighlight %}
+```
 
 [Back to your actions](#menu)
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="/assets/sep_2.png"/>
+<img src="/assets/sep_2.png"/>
+<img src="/assets/sep_2.png"/>
+<img src="/assets/sep_2.png"/>
+<img src="/assets/sep_2.png"/>
 
 <span id="call-orolo"></span>
 
@@ -144,26 +114,12 @@ After reading the question in the envelope, you have some doubt about which sort
 
 [Back to your actions](#menu)
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="/assets/sep_3.png"/>
+<img src="/assets/sep_3.png"/>
+<img src="/assets/sep_3.png"/>
+<img src="/assets/sep_3.png"/>
+<img src="/assets/sep_3.png"/>
+
 
 <span id="search-the-computer"></span>
 
@@ -171,7 +127,7 @@ After reading the question in the envelope, you have some doubt about which sort
 
 On the computer you are using to solve the code challenge, all the tools required for you to work are already installed and running, mainly a JavaScript interpreter (node.js), an editor and a console. You try to open the OS folder explorer, to search for any useful information, but you get an error message stating that you have not the required access level to proceed. After a moment of reflexion, you decide to check the access given to the editor and discover that the editor was launched with **Admin Rights**. You get very excited by this discovery which means that you can explore and open any files on that computer within this editor. While you explore the computer files, you find a file called **quick_sort_asc.js**. You decide to open the file and start reading.
 
-{% highlight js %}
+```js
 function head(xs) {
   return xs[0]
 }
@@ -203,31 +159,16 @@ function sortSubfolders(arr) {
   let right = tail(arr).filter(x => x.name > p.name)
   return sortFiles(left).concat(cons(p, sortFiles(right)))
 }
-
-{% endhighlight %}  
+```
 
 [Back to your actions](#menu)
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img src="/assets/sep_4.png"/>
+<img src="/assets/sep_4.png"/>
+<img src="/assets/sep_4.png"/>
+<img src="/assets/sep_4.png"/>
+<img src="/assets/sep_4.png"/>
+
 
 <span id="solution"></span>
 
@@ -235,7 +176,7 @@ function sortSubfolders(arr) {
 
 You are finally ready with your solution. You call Orolo and tells him that your code is ready. After a few minutes of waiting, he enters the room. He smiles and asks how it went. You mention that it was really not easy, but you were finally able to produce a simple piece of code able to solve the coding challenge. He asks you to explain your code logic and start listening to you. He seems happy with your explanations and shows you his solution. You both start comparing the two pieces of code.
 
-{% highlight js %}
+```js
 function head(xs) {
   return xs[0]
 }
@@ -275,6 +216,12 @@ function sort_asc(f) {
     "subfolders" : sortFolders(f.subfolders).map(sf => sort_asc(sf))
   }
 }
-{% endhighlight %}
+```
 
 [Back to your actions](#menu)
+
+<img src="/assets/sep_5.png"/>
+<img src="/assets/sep_5.png"/>
+<img src="/assets/sep_5.png"/>
+<img src="/assets/sep_5.png"/>
+<img src="/assets/sep_5.png"/>
