@@ -76,7 +76,7 @@ To represent a **folder** with subfolders, we reuse the same structure defined a
 
 ### Your Task
 
-Given a folder **f** as an input, write a JavaScript function **sort_asc(f)** sorting the folder **f** ascendingly (also called the lexicographic order). The function **sort_asc(f)** does not change **f** but builds and returns a new folder structure with its elements sorted. The function **sort_asc(f)** should be able to sort any folder representation regardless of the number of subfolder levels. You are also provided with the code of the function **show(f)** which can be found <a href="https://www.interviewpuzzler.com/assets/show.js">here</a>. As an example, when evaluating **show(sort_asc(f))** with **f = (Ref 2)**, the result should be :
+Given a folder **f** as an input, write a JavaScript function **sort_asc(f)** sorting the folder **f** ascendingly (also called the lexicographic order). The function **sort_asc(f)** does not change **f** but builds and returns a new folder structure with its elements sorted. The function **sort_asc(f)** should be able to sort any folder representation regardless of the number of subfolder levels. You are also provided with the code of the function **show(f)** which can be found <a href="https://www.interviewpuzzler.com/assets/show.js">here</a>. As an example, when evaluating **show(sort_asc(f))** where **f** points to the structure **(Ref 2)**, the result should be :
 
 ```js
 root
