@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "#10 Interview Preparation | 1st coding interview with SimpleOS"
+description: Get prepared for your next coding interview by solving real software challenges with this interactive fiction.
 date:   2023-11-01 00:00:00 +0000
 published: true
 ---
@@ -17,6 +18,8 @@ published: true
 
 You are invited for a first interview at the company SimpleOS. You meet the first interviewer, Orolo, which gives you more details about the programming role you have applied to. He offers you water and coffee, and tells you that this interview aims to evaluate your coding skills. He brings you to a room where you have access to a computer (without internet connection), a coffee machine, a pen and some blank papers. On the table, you can see a paper containing the coding question. Orolo tells you that the computer is already configured with the necessary tools (editor, interpreter, compiler) and you can use all the items at your disposal to solve the coding question. He leaves you alone saying that he will come back in 90 minutes to evaluate your progress.
 
+<span id="menu"></span>
+
 ### Your actions
 
 [Read the question](#question)
@@ -25,13 +28,15 @@ You are invited for a first interview at the company SimpleOS. You meet the firs
 
 [Your solution is ready](#solution)
 
-<br/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
 
 ## Question 
 <a name="question"></a>
-<details closed>
-  <summary>Click to view</summary>
-<br/>
+
 <h3>Background</h3>
 
 In SimpleOS, a <b>folder</b> is represented with a structure with attributes <b>name</b>, <b>files</b> and <b>subfolders</b>. See below a JSON representation of a simple folder containing two files and without any subfolders.
@@ -103,46 +108,48 @@ root
 ......h2.jpg
 {% endhighlight %}
 
-</details>
+[Back to your actions](#menu)
 
-<br/>
+<img src="https://www.interviewpuzzler.com/assets/sep_2.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_2.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_2.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_2.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_2.png"/>
 
 ## Hint
 <a name="hint"></a>
-<details closed>
-  <summary>Click to view</summary>
-  <br/>
-  After 20 minutes, Orolo comes back to the room to verify that you can work comfortably with the computer and asks you if you need anything. You mentioned that the computer setup is great and the question is very clear. You also indicate that you made some progress but, if possible, will be nice to get a small help to finalize your solution. Orolo states that it is possible and suggests you to read <a href="https://en.wikipedia.org/wiki/Depth-first_search" target="_blank">this</a>. He then leaves you alone in the room.
-</details>
+After 20 minutes, Orolo comes back to the room to verify that you can work comfortably with the computer and asks you if you need anything. You mentioned that the computer setup is great and the question is very clear. You also indicate that you made some progress but, if possible, will be nice to get a small help to finalize your solution. Orolo states that it is possible and suggests you to read <a href="https://en.wikipedia.org/wiki/Depth-first_search" target="_blank">this</a>. He then leaves you alone in the room.
 
-<br/>
+[Back to your actions](#menu)
+
+<img src="https://www.interviewpuzzler.com/assets/sep_3.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_3.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_3.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_3.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_3.png"/>
 
 ## Solution
 <a name="solution"></a>
-<details closed>
-  <summary>Click to view</summary>
-  <br/>
-  After 90 minutes, Orolo comes back to the room and ask you how it went. You discuss with him the question and mention how you tried to solve it. Orolo listen carefully about your code design. He says that he has with him one potential solution to the challenge. He shows it and you both start comparing it with your solution.
-  <br/>
-  <br/>
-  <div class="code-solution">
-  {% highlight js %}
-  function show(f) {
-    showCalc(f, 0)
-  }
-
-  function showCalc(f, i) {
-    console.log(tab(i) + f.name)
-    f.files.forEach(a => console.log(tab(i + 1) + a))
-    f.subfolders.forEach(a => showCalc(a, i + 1))
-  }
-
-  function tab(t) {
-    if (t < 1) return "" 
-    else return ".." + tab(t - 1)
-  }
-  {% endhighlight %}
-  </div>
-</details>
-
+After 90 minutes, Orolo comes back to the room and ask you how it went. You discuss with him the question and mention how you tried to solve it. Orolo listen carefully about your code design. He says that he has with him one potential solution to the challenge. He shows it and you both start comparing it with your solution.
 <br/>
+<br/>
+<div class="code-solution">
+{% highlight js %}
+function show(f) {
+  showCalc(f, 0)
+}
+
+function showCalc(f, i) {
+  console.log(tab(i) + f.name)
+  f.files.forEach(a => console.log(tab(i + 1) + a))
+  f.subfolders.forEach(a => showCalc(a, i + 1))
+}
+
+function tab(t) {
+  if (t < 1) return "" 
+  else return ".." + tab(t - 1)
+}
+{% endhighlight %}
+</div>
+
+For more articles, you can visit [www.interviewpuzzler.com](https://www.interviewpuzzler.com)
