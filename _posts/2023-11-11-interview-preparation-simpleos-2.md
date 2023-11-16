@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "#11 Interview Preparation | 2nd coding interview with SimpleOS"
-description: Get prepared for your next coding interview by solving real software challenges with this interactive fiction.
+description: Get prepared for your next coding interview by solving real programming challenges with this interactive fiction.
 date:   2023-11-11 00:00:00 +0000
 published: true
 ---
 ## Context
 
-SimpleOS has been impressed with the solution you have provided in the first interview. They invited you for a second interview. The second interview, like the first one, is located in their headquarter building. When you arrive at the company, you meet Orolo who seems happy to see you again. He congratulates you for passing the first interview and brings you to the cafeteria so that you can both chat around a coffee. He gives you more information about the role you have applied and explains that the company is searching for candidates with strong analytical and core programming skills. He would like to continue evaluating your JavaScript coding skills in this second interview with the same process used previously. You mention that this works for you and are ready to start. You both start walking in company building for a few minutes following various corridors and taking a lift to the 24th floor. He brings you to a room where you see a table, a shelf, a chair and a coffee machine. On the table, you see a computer, a phone, a bottle of water, pen, papers and an envelope. Orolo tells you that the envelope contains the coding challenge and you can use anything at your disposal in this room while working on the challenge. Before leaving the room, he tells you that he is going to come back in 120 minutes and if you have any questions, you can simply call him with the phone by dialing #42494.
+SimpleOS has been impressed with the solution you have provided in [the first interview](https://www.interviewpuzzler.com/2023/11/01/interview-preparation-simpleos-1.html). They invited you for a second interview. The second interview, like the first one, is located in their headquarter building. When you arrive at the company, you meet Orolo who seems happy to see you again. He congratulates you for passing the first interview and brings you to the cafeteria so that you can both chat around a coffee. He gives you more information about the role you have applied and explains that the company is searching for candidates with strong analytical and core programming skills. He would like to continue evaluating your JavaScript coding skills in this second interview with the same process used previously. You mention that this works for you and are ready to start. You both start walking in company building for a few minutes following various corridors and taking a lift to the 24th floor. He brings you to a room where you see a table, a shelf, a chair and a coffee machine. On the table, you see a computer, a phone, a bottle of water, pen, papers and an envelope. Orolo tells you that the envelope contains the coding challenge and you can use anything at your disposal in this room while working on the challenge. Before leaving the room, he tells you that he is going to come back in 120 minutes and if you have any questions, you can simply call him with the phone by dialing #42494.
 
 <span id="menu"></span>
 
@@ -107,7 +107,7 @@ root
 
 ## Call Orolo
 
-After reading the question in the envelope, you have some doubt about which sorting functions you should use, can you reuse a sorting function already available in the JavaScript standard library or do you have to code a new one ? You pick up the phone and dial the #42494. Orolo answers your call immediately and listen to your question. Here is what he answered before hanging up. 
+After reading the question in the envelope, you have some doubt about which sorting functions you should use, can you reuse a sorting function already available in the JavaScript standard library or do you have to code a new one ? You pick up the phone and dial #42494. Orolo answers your call immediately and listen to your question. Here is what he answered before hanging up. 
 
 **Orolo :**
 
