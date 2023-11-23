@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "#10 Interview Preparation | 1st coding interview with SimpleOS"
-description: Get prepared for your next coding interview by solving real software challenges with this interactive fiction.
+description: Get prepared for your next coding interview by solving real programming challenges with this interactive game.
 date:   2023-11-01 00:00:00 +0000
 published: true
 ---
