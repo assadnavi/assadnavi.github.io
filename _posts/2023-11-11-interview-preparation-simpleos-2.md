@@ -126,7 +126,7 @@ After reading the question in the envelope, you have some doubt about which sort
 
 ## Search the computer
 
-On the computer you are using to solve the code challenge, all the tools required for you to work are already installed and running, mainly a JavaScript interpreter (node.js), an editor and a console. You try to open the OS folder explorer, to search for any useful information, but you get an error message stating that you have not the required access level to proceed. After a moment of reflexion, you decide to check the access given to the editor and discover that the editor was launched with **Admin Rights**. You get very excited by this discovery which means that you can explore and open any files on that computer within this editor. While you explore the computer files, you find a file called **quick_sort_asc.js**. You decide to open the file and start reading.
+On the computer you are using to solve the code challenge, all the tools required for you to work are already installed and running, mainly a JavaScript interpreter (node.js), an editor and a console. You try to open the OS folder explorer, to search for any useful information, but you get an error message stating that you have not the required access level to proceed. After a moment of reflexion, you decide to check the access given to the editor and discover that the editor was launched with **Administrator** Rights. You get very excited by this discovery which means that you can explore and open any files on that computer within this editor. While you explore the computer files, you find a file called **quick_sort_asc.js**. You decide to open the file and start reading.
 
 ```js
 function head(xs) {
@@ -219,4 +219,6 @@ function sort_asc(f) {
 }
 ```
 
-For more articles, you can visit [www.interviewpuzzler.com](https://www.interviewpuzzler.com)
+[Back to your actions](#menu)
+
+For more articles [www.interviewpuzzler.com](https://www.interviewpuzzler.com)

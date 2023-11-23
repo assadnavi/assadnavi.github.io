@@ -6,14 +6,6 @@ date:   2023-11-01 00:00:00 +0000
 published: true
 ---
 
-<style>
-  .code-solution pre {
-    border-width:2px; 
-    border-style:solid;
-    border-color:green;
-  }
-</style>
-
 ## Context
 
 You are invited for a first interview at the company SimpleOS. You meet the first interviewer, Orolo, which gives you more details about the programming role you have applied to. He offers you water and coffee, and tells you that this interview aims to evaluate your coding skills. He brings you to a room where you have access to a computer (without internet connection), a coffee machine, a pen and some blank papers. On the table, you can see a paper containing the coding question. Orolo tells you that the computer is already configured with the necessary tools (editor, interpreter, compiler) and you can use all the items at your disposal to solve the coding question. He leaves you alone saying that he will come back in 90 minutes to evaluate your progress.
@@ -44,20 +36,20 @@ In SimpleOS, a <b>folder</b> is represented with a structure with attributes <b>
 <br/>
 <b>(Ref 1)</b>
 
-{% highlight js %}
+```js
 {
   "name"    : "root",
   "files"   : ['readme.txt', 'hello.txt'],
   "subfolders" : []
 }
-{% endhighlight %}
+```
 
 To represent a <b>folder</b> with subfolders, we reuse the same structure defined above in the attribute <b>subfolders</b>. This can represent any number of subfolder levels. See below a JSON representation of a folder containing two levels of subfolders.
 <br/>
 <br/>
 <b>(Ref 2)</b>
 
-{% highlight js %}
+```js
 {
   "name"    : "root",
   "files"   : ['readme.txt', 'hello.txt'],
@@ -79,7 +71,7 @@ To represent a <b>folder</b> with subfolders, we reuse the same structure define
       ]
     }] 
 }
-{% endhighlight %}
+```
 
 <br/>
 
@@ -92,7 +84,7 @@ Given a folder <b>f</b> as an input, write a JavaScript function <b>show(f)</b> 
 <h3>Output</h3>
 When evaluating <b>show(f)</b> with <b>(Ref 2)</b> as its input, we obtain :
 
-{% highlight js %}
+```js
 root
 ..readme.txt
 ..hello.txt
@@ -106,7 +98,7 @@ root
 ....holidays
 ......h1.jpg
 ......h2.jpg
-{% endhighlight %}
+```
 
 [Back to your actions](#menu)
 
@@ -133,8 +125,8 @@ After 20 minutes, Orolo comes back to the room to verify that you can work comfo
 After 90 minutes, Orolo comes back to the room and ask you how it went. You discuss with him the question and mention how you tried to solve it. Orolo listen carefully about your code design. He says that he has with him one potential solution to the challenge. He shows it and you both start comparing it with your solution.
 <br/>
 <br/>
-<div class="code-solution">
-{% highlight js %}
+
+```js
 function show(f) {
   showCalc(f, 0)
 }
@@ -149,7 +141,8 @@ function tab(t) {
   if (t < 1) return "" 
   else return ".." + tab(t - 1)
 }
-{% endhighlight %}
-</div>
+```
 
-For more articles, you can visit [www.interviewpuzzler.com](https://www.interviewpuzzler.com)
+[Back to your actions](#menu)
+
+For more articles [www.interviewpuzzler.com](https://www.interviewpuzzler.com)
