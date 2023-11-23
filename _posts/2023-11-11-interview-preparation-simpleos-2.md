@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "#11 Interview Preparation | 2nd coding interview with SimpleOS"
-description: Get prepared for your next coding interview by solving real programming challenges with this interactive game.
+title: "You are invited for a 2nd coding interview at SimpleOS"
+description: Get prepared for your next coding interview by solving real programming challenges with this interactive simulation.
 date:   2023-11-11 00:00:00 +0000
 published: true
 ---
