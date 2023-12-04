@@ -18,6 +18,8 @@ You are invited for a first interview at the company SimpleOS. You meet the firs
 
 [Ask a hint](#hint)
 
+[Think simple](#simple)
+
 [Your solution is ready](#solution)
 
 <img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
@@ -26,8 +28,9 @@ You are invited for a first interview at the company SimpleOS. You meet the firs
 <img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
 <img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
 
-## Question 
 <a name="question"></a>
+
+## Question 
 
 <h3>Background</h3>
 
@@ -108,8 +111,10 @@ root
 <img src="https://www.interviewpuzzler.com/assets/sep_2.png"/>
 <img src="https://www.interviewpuzzler.com/assets/sep_2.png"/>
 
-## Hint
 <a name="hint"></a>
+
+## Hint
+
 After 20 minutes, Orolo comes back to the room to verify that you can work comfortably with the computer and asks you if you need anything. You mentioned that the computer setup is great and the question is very clear. You also indicate that you made some progress but, if possible, will be nice to get a small help to finalize your solution. Orolo states that it is possible and suggests you to read <a href="https://en.wikipedia.org/wiki/Depth-first_search" target="_blank">this</a>. He then leaves you alone in the room.
 
 [Back to your actions](#menu)
@@ -120,8 +125,33 @@ After 20 minutes, Orolo comes back to the room to verify that you can work comfo
 <img src="https://www.interviewpuzzler.com/assets/sep_3.png"/>
 <img src="https://www.interviewpuzzler.com/assets/sep_3.png"/>
 
-## Solution
+<a name="simple"></a>
+
+## Think Simple
+
+When thinking about the entire question to solve, you cannot figure out a direct solution. Instead, you decide to focus on a simpler part of the code challenge. The part you are aiming to solve now is the generation of the text to indent the folders of the various levels. After thinking a few minutes, you believe that it would be a good idea to have a function **tab(t)** taking an integer as an input and returning a text with the correct number of dots. As an example, the evaluation of *tab(3)* should return "......".
+
+You keep working on this idea and produce the below code.
+
+```js
+function tab(t) {
+  if (t < 1) return "" 
+  return ".." + tab(t - 1)
+}
+```
+
+[Back to your actions](#menu)
+
+<img src="https://www.interviewpuzzler.com/assets/sep_4.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_4.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_4.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_4.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_4.png"/>
+
 <a name="solution"></a>
+
+## Solution
+
 After 90 minutes, Orolo comes back to the room and ask you how it went. You discuss with him the question and mention how you tried to solve it. Orolo listen carefully about your code design. He says that he has with him one potential solution to the challenge. He shows it and you both start comparing it with your solution.
 <br/>
 <br/>
@@ -139,7 +169,7 @@ function showCalc(f, i) {
 
 function tab(t) {
   if (t < 1) return "" 
-  else return ".." + tab(t - 1)
+  return ".." + tab(t - 1)
 }
 ```
 

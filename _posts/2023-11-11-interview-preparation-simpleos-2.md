@@ -77,7 +77,7 @@ To represent a **folder** with subfolders, we reuse the same structure defined a
 
 ### Your Task
 
-Given a folder **f** as an input, write a JavaScript function **sort_asc(f)** sorting the folder **f** ascendingly (also called the lexicographic order). The function **sort_asc(f)** does not change **f** but builds and returns a new folder structure with its elements sorted. The function **sort_asc(f)** should be able to sort any folder representation regardless of the number of subfolder levels. You are also provided with the code of the function **show(f)** which can be found <a href="https://www.interviewpuzzler.com/assets/show.js">here</a>. As an example, when evaluating **show(sort_asc(f))** where **f** points to the structure **(Ref 2)**, the result should be :
+Given a folder **f** as an input, write a JavaScript function **sort_asc(f)** sorting the folder **f** ascendingly (also called the lexicographic order). The function **sort_asc(f)** does not change **f** but builds and returns a new folder structure with its elements sorted. The function **sort_asc(f)** should be able to sort any folder representation regardless of the number of subfolder levels. You are also provided with the code of the function **show(f)** which can be found <a href="https://www.interviewpuzzler.com/assets/show.js" target="_blank">here</a>. As an example, when evaluating **show(sort_asc(f))** where **f** points to the structure **(Ref 2)**, the result should be :
 
 ```js
 root
@@ -126,7 +126,7 @@ After reading the question in the envelope, you have some doubt about which sort
 
 ## Search the computer
 
-On the computer you are using to solve the code challenge, all the tools required for you to work are already installed and running, mainly a JavaScript interpreter (node.js), an editor and a console. You try to open the OS folder explorer, to search for any useful information, but you get an error message stating that you have not the required access level to proceed. After a moment of reflexion, you decide to check the access given to the editor and discover that the editor was launched with **Administrator** Rights. You get very excited by this discovery which means that you can explore and open any files on that computer within this editor. While you explore the computer files, you find a file called **quick_sort_asc.js**. You decide to open the file and start reading.
+On the computer you are using to solve the code challenge, all the tools required for you to work are already installed and running, mainly a JavaScript interpreter (node.js), an editor and a console. You try to open the OS folder explorer, to search for any useful information, but you get an error message stating that you have not the required access level to proceed. After a moment of reflexion, you decide to check the access given to the editor and discover that the editor was launched with **Administrator** rights. You get very excited by this discovery which means that you can explore and open any files on that computer within this editor. While you explore the computer files, you find a file called **quick_sort_asc.js**. You decide to open the file and start reading.
 
 ```js
 function head(xs) {

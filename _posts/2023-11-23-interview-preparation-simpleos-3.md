@@ -88,7 +88,7 @@ Given a folder **f** and a string **s**, write a JavaScript function **search(f,
 
 In the room, there is a massive shelf against the wall located on the left side of the table. On the shelf, you notice a large screen and a camera, probably used for video meetings. Its lower portion is filled with books. Without making any noise, you approach the shelf and start looking at the books it contains. You see books from the following subjects : marketing, communication and accounting, nothing exciting. You start to believe that you won't find anything useful to solve the coding challenge, but you suddenly notice a closed drawer located at the bottom of the shelf. You hesitate a second but finally open the drawer to investigate what it contains. You find some coding books. One book particularly attracts your attention because it has a marked page. The book title is *"JavaScript: The Good Parts" by Douglas Crockford*. You open the book at the marked page and start reading. After some time, you put back the book at its exact place, close the drawer and return to your desk.
 
-To look at the page, click <a href="/assets/recursion.pdf">here</a>
+To look at the page, click <a href="https://www.interviewpuzzler.com/assets/recursion.pdf" target="_blank">here</a>
 
 [Back to your actions](#menu)
 
