@@ -1,10 +1,32 @@
 ---
 layout: post
-title:  "You are invited for a 3rd coding interview at SimpleOS"
+title:  "Coding interview at SimpleOS (Part three)"
 description: Get prepared for your next coding interview by solving real programming challenges with this interactive simulation.
 date:   2023-11-23 00:00:00 +0000
 published: true
 ---
+
+## Introduction
+
+This page contains an interactive story taking the reader to a fictional coding interview. By reading this story, you will play the main character, a coder invited to a job interview. While reading this story, you will decide your actions. Each action allows you to discover helpful information to complete the story. This interactive story is aiming to present to the reader coding topics in a fun and entertaining way. This story is split into four parts. Although each part can technically be done independently, I recommend the reader to read them in order. Here are the links to all the parts.
+
+- <a target="_blank" href="https://www.interviewpuzzler.com/2023/11/01/interview-preparation-simpleos-1.html">Coding interview at SimpleOS (Part one)</a>
+
+- <a target="_blank" href="https://www.interviewpuzzler.com/2023/11/11/interview-preparation-simpleos-2.html">Coding interview at SimpleOS (Part two)</a>
+
+- <a target="_blank" href="https://www.interviewpuzzler.com/2023/11/23/interview-preparation-simpleos-3.html">Coding interview at SimpleOS (Part three)</a>
+
+- <a target="_blank" href="https://www.interviewpuzzler.com/2023/12/04/interview-preparation-simpleos-4.html">Coding interview at SimpleOS (Part four)</a>
+
+To start reading the third part => [click here](#start)
+
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+
+<span id="start"></span>
 
 ## Context
 

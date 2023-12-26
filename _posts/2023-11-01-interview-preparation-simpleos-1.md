@@ -1,10 +1,32 @@
 ---
 layout: post
-title:  "You are invited for a 1st coding interview at SimpleOS"
-description: Get prepared for your next coding interview by solving real programming challenges with this interactive simulation.
+title:  "Coding interview at SimpleOS (Part one)"
+description: Get prepared for your next coding interview by solving real programming challenges with this interactive story.
 date:   2023-11-01 00:00:00 +0000
 published: true
 ---
+
+## Introduction
+
+This page contains an interactive story taking the reader to a fictional coding interview. By reading this story, you will play the main character, a coder invited to a job interview. While reading this story, you will decide your actions. Each action allows you to discover helpful information to complete the story. This interactive story is aiming to present to the reader coding topics in a fun and entertaining way. This story is split into four parts. Although each part can technically be done independently, I recommend the reader to read them in order. Here are the links to all the parts.
+
+- <a target="_blank" href="https://www.interviewpuzzler.com/2023/11/01/interview-preparation-simpleos-1.html">Coding interview at SimpleOS (Part one)</a>
+
+- <a target="_blank" href="https://www.interviewpuzzler.com/2023/11/11/interview-preparation-simpleos-2.html">Coding interview at SimpleOS (Part two)</a>
+
+- <a target="_blank" href="https://www.interviewpuzzler.com/2023/11/23/interview-preparation-simpleos-3.html">Coding interview at SimpleOS (Part three)</a>
+
+- <a target="_blank" href="https://www.interviewpuzzler.com/2023/12/04/interview-preparation-simpleos-4.html">Coding interview at SimpleOS (Part four)</a>
+
+To start reading the first part => [click here](#start)
+
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+
+<span id="start"></span>
 
 ## Context
 
@@ -35,8 +57,7 @@ You are invited for a first interview at the company SimpleOS. You meet the firs
 <h3>Background</h3>
 
 In SimpleOS, a <b>folder</b> is represented with a structure with attributes <b>name</b>, <b>files</b> and <b>subfolders</b>. See below a JSON representation of a simple folder containing two files and without any subfolders.
-<br/>
-<br/>
+
 <b>(Ref 1)</b>
 
 ```js
@@ -48,8 +69,7 @@ In SimpleOS, a <b>folder</b> is represented with a structure with attributes <b>
 ```
 
 To represent a <b>folder</b> with subfolders, we reuse the same structure defined above in the attribute <b>subfolders</b>. This can represent any number of subfolder levels. See below a JSON representation of a folder containing two levels of subfolders.
-<br/>
-<br/>
+
 <b>(Ref 2)</b>
 
 ```js
@@ -76,14 +96,10 @@ To represent a <b>folder</b> with subfolders, we reuse the same structure define
 }
 ```
 
-<br/>
-
 <h3>Your Task</h3>
 
 Given a folder <b>f</b> as an input, write a JavaScript function <b>show(f)</b> printing on the console the folder <b>f</b>. See in section <b>Output</b> below the expected print format. The function <b>show(f)</b> should be able to print any folder representation regardless of the number of subfolder levels. You can assume that <b>f</b> is always a valid folder structure.
 
-<br/>
-<br/>
 <h3>Output</h3>
 When evaluating <b>show(f)</b> with <b>(Ref 2)</b> as its input, we obtain :
 
@@ -153,8 +169,6 @@ function tab(t) {
 ## Solution
 
 After 90 minutes, Orolo comes back to the room and ask you how it went. You discuss with him the question and mention how you tried to solve it. Orolo listen carefully about your code design. He says that he has with him one potential solution to the challenge. He shows it and you both start comparing it with your solution.
-<br/>
-<br/>
 
 ```js
 function show(f) {

@@ -1,10 +1,33 @@
 ---
 layout: post
-title: "You are invited for a 2nd coding interview at SimpleOS"
+title: "Coding interview at SimpleOS (Part two)"
 description: Get prepared for your next coding interview by solving real programming challenges with this interactive simulation.
 date:   2023-11-11 00:00:00 +0000
 published: true
 ---
+
+## Introduction
+
+This page contains an interactive story taking the reader to a fictional coding interview. By reading this story, you will play the main character, a coder invited to a job interview. While reading this story, you will decide your actions. Each action allows you to discover helpful information to complete the story. This interactive story is aiming to present to the reader coding topics in a fun and entertaining way. This story is split into four parts. Although each part can technically be done independently, I recommend the reader to read them in order. Here are the links to all the parts.
+
+- <a target="_blank" href="https://www.interviewpuzzler.com/2023/11/01/interview-preparation-simpleos-1.html">Coding interview at SimpleOS (Part one)</a>
+
+- <a target="_blank" href="https://www.interviewpuzzler.com/2023/11/11/interview-preparation-simpleos-2.html">Coding interview at SimpleOS (Part two)</a>
+
+- <a target="_blank" href="https://www.interviewpuzzler.com/2023/11/23/interview-preparation-simpleos-3.html">Coding interview at SimpleOS (Part three)</a>
+
+- <a target="_blank" href="https://www.interviewpuzzler.com/2023/12/04/interview-preparation-simpleos-4.html">Coding interview at SimpleOS (Part four)</a>
+
+To start reading the second part => [click here](#start)
+
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+<img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
+
+<span id="start"></span>
+
 ## Context
 
 SimpleOS has been impressed with the solution you have provided in [the first interview](https://www.interviewpuzzler.com/2023/11/01/interview-preparation-simpleos-1.html). They invited you for a second interview. The second interview, like the first one, is located in their headquarter building. When you arrive at the company, you meet Orolo who seems happy to see you again. He congratulates you for passing the first interview and brings you to the cafeteria so that you can both chat around a coffee. He gives you more information about the role you have applied and explains that the company is searching for candidates with strong analytical and core programming skills. He would like to continue evaluating your JavaScript coding skills in this second interview with the same process used previously. You mention that this works for you and are ready to start. You both start walking in company building for a few minutes following various corridors and taking a lift to the 24th floor. He brings you to a room where you see a table, a shelf, a chair and a coffee machine. On the table, you see a computer, a phone, a bottle of water, pen, papers and an envelope. Orolo tells you that the envelope contains the coding challenge and you can use anything at your disposal in this room while working on the challenge. Before leaving the room, he tells you that he is going to come back in 120 minutes and if you have any questions, you can simply call him with the phone by dialing #42494.
