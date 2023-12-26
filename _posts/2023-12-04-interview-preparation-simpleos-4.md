@@ -8,17 +8,7 @@ published: true
 
 ## Introduction
 
-This page contains an interactive story taking the reader to a fictional coding interview. By reading this story, you will play the main character, a coder invited to a job interview and having to solve a coding challenge. While reading this story, you will decide your actions. Each action allows you to discover helpful information to complete the story. This interactive story is aiming to present to the reader coding topics in a fun and entertaining way. This story is split into four parts. Although each part can technically be done independently, I recommend the reader to read them in order. Here are the links to all the parts.
-
-- <a target="_blank" href="https://www.interviewpuzzler.com/2023/11/01/interview-preparation-simpleos-1.html">Coding interview at SimpleOS (Part one)</a>
-
-- <a target="_blank" href="https://www.interviewpuzzler.com/2023/11/11/interview-preparation-simpleos-2.html">Coding interview at SimpleOS (Part two)</a>
-
-- <a target="_blank" href="https://www.interviewpuzzler.com/2023/11/23/interview-preparation-simpleos-3.html">Coding interview at SimpleOS (Part three)</a>
-
-- <a target="_blank" href="https://www.interviewpuzzler.com/2023/12/04/interview-preparation-simpleos-4.html">Coding interview at SimpleOS (Part four)</a>
-
-To start reading the fourth part => [click here](#start)
+*Coding interview at SimpleOS* is an interactive story. If you have not yet read its introduction go <a href="https://www.interviewpuzzler.com/2023/11/01/interview-preparation-simpleos-1.html">here</a>. To start reading the fourth part of this story [click here](#start).
 
 <img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
 <img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
