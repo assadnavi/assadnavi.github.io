@@ -10,7 +10,7 @@ published: true
 
 ## Introduction
 
-This page contains an interactive story where the reader will take part of a C++ coding quiz. The reader will be asked to write C++ code in an interactive quiz format. This quiz is designed for people preparing for a job interview or willing to improve their coding skills. To start [click here](#start).
+This page contains an interactive story where the reader will take part of a C++ coding quiz. The reader will be asked to write C++ code in an interactive quiz format. This quiz is designed for people preparing for a job interview or willing to improve their coding skills. [=> Start](#start).
 
 <img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
 <img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
@@ -23,6 +23,8 @@ This page contains an interactive story where the reader will take part of a C++
 ## Start
 
 You applied to a software engineering job and received recently a positive answer from the company. Today is the first interview and you present yourself at the reception. You are welcomed by Scott who is the team leader of a coding team. He explains you that the team mainly codes in C++ and therefore, he would like to judge your C++ coding skills. For this purpose, he prepared a small coding test and asks you kindly if you are agreeing to take it. 
+
+### What do you do ?
 
 [=> Accept](#accept)
 
@@ -40,6 +42,8 @@ You applied to a software engineering job and received recently a positive answe
 
 After thinking for a moment, you decide that you are not ready to take a test in C++. You politely refuse. Scott looks surprised but understands your decision. He immediately tells you that you can take your time to get ready and resume this interview when you feel ready.
 
+### What do you do ?
+
 [=> Go home](#home)
 
 <img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
@@ -52,11 +56,13 @@ After thinking for a moment, you decide that you are not ready to take a test in
 
 ## You accepted
 
-You accept to pass the test. Scott looks happy, he takes you to a room where you will be able to focus. The room has a computer with all the necessary tools already installed (editor and compiler). Here is the problem you need to solve.
+You accept to take the test. Scott looks happy, he takes you to a room where you will be able to focus. The room has a computer with all the necessary tools already installed (editor and compiler). Here is the problem you need to solve.
 
-`1) Code the class 'Day' in C++ which represents a day (Monday, Tuesday, ..., Sunday).`
+`1) Code the class 'Day' in C++ which represents a week day (Monday, Tuesday, ..., Sunday).`
 
-`2) Code a function 'print' taking a 'Day' object and printing in the console 'We are <x>' where <x> is 'Monday', 'Tuesday', ... 'Sunday'.`
+`2) Add to the class 'Day' a member function 'text' returning 'We are <x>' where <x> is 'Monday', 'Tuesday', ... 'Sunday'.`
+
+### What do you do ?
 
 [=> Start coding](#step1)
 
@@ -70,7 +76,7 @@ You accept to pass the test. Scott looks happy, he takes you to a room where you
 
 ## Quiz Question 1
 
-You understood the instruction and are able to write some initial code. Your code has now a class **Day** and an enum **DayChoice** which stops the creation of a wrong Day object. You find that to be a good design choice.
+You understood the instruction and are able to write some initial code. Your code has now a class **Day** and an enum **DayChoice** which protects against the creation of a wrong Day object. You find that to be a good design choice.
 
 ```cpp
 int main() {
@@ -106,6 +112,8 @@ error: unknown type name 'Monday'
   Day day(Monday);
           ^
 ```
+
+### What do you do ?
 
 [=> To try understanding the issue](#step1learn)
 
@@ -147,7 +155,9 @@ int main() {
 }
 ```
 
-[=> Keep working](#step2)
+### What do you do ?
+
+[=> Next](#step2)
 
 <img src="https://www.interviewpuzzler.com/assets/sep_4.png"/>
 <img src="https://www.interviewpuzzler.com/assets/sep_4.png"/>
@@ -159,7 +169,7 @@ int main() {
 
 ## Quiz Question 2
 
-After fixing the compiler error, the next step you take is to spend some time coding a new member function for the class **Day**. The function is called **text()** and is aiming to return a string that can then be printing on the console. The code you produced can be seen below.
+After fixing the compiler error, the next step you take is to spend some time coding a new member function for the class **Day**. The function is called **text()** and is aiming to return a string. The code you produced can be seen below.
 
 ```cpp
 #include <iostream>
@@ -207,6 +217,8 @@ error: invalid operands to binary expression ('char *' and 'char *')
       return prefix + name;
 ```
 
+### What do you do ?
+
 [=> To try understanding the issue](#step2learn)
 
 [=> You know why, fix it and keep working](#step3)
@@ -221,7 +233,7 @@ error: invalid operands to binary expression ('char *' and 'char *')
 
 ## C++ Operator
 
-When reading carefully the error message, you noticed that the issue was linked to the operator **+**. You guessed correctly that the C++ standard library does not have a declaration and definition for **operator+(char\*, char\*)** but has one for **operator+(std::string, char*)**. You amend your code and use instead the type **std::string**. The new code compiles without any issues. Here is the latest version of the code.
+When reading carefully the error message, you noticed that the issue is linked to the operator **+**. You guess correctly that the C++ standard library does not have a declaration and definition for **operator+(char\*, char\*)** but has one for **operator+(std::string, char*)**. You amend your code and use instead the type **std::string**. The new code compiles without any issues. Here is the latest version of the code.
 
 ```cpp
 #include <iostream>
@@ -262,7 +274,9 @@ int main() {
 }
 ```
 
-[=> Keep working](#step3)
+### What do you do ?
+
+[=> Next](#step3)
 
 <img src="https://www.interviewpuzzler.com/assets/sep_2.png"/>
 <img src="https://www.interviewpuzzler.com/assets/sep_2.png"/>
@@ -274,7 +288,7 @@ int main() {
 
 ## Quiz Question 3
 
-You start seeing the end of this coding challenge. You have added in the main a few instructions to create a **Day** object, call the function **text()** and finally print the result. The code is ready and compiles without any errors.
+You start seeing the end of this coding challenge. You have added in the main a few instructions to test your code. In the main function you create a **Day** object, call the function **text()** and finally print the result in the console. The code is ready and compiles without any errors.
 
 ```cpp
 #include <iostream>
@@ -318,6 +332,8 @@ int main() {
 
 You try running your code and expect the output to be **We are Monday**. In the console, you see **1\{??\(17????1\{???7????**
 
+### What do you do ?
+
 [=> To try understanding the issue](#step3learn)
 
 [=> You know why, fix it](#end)
@@ -332,7 +348,7 @@ You try running your code and expect the output to be **We are Monday**. In the 
 
 ## C++ Stack Destruction
 
-After reading multiple times the source code, you start looking at the declaration of the functions you have created. You notice that the function **Day::text()** returns a reference to a std::string and start wondering why ? After some reflexion, your conclusion is that at runtime, once the function **Day::text()** has finished its execution, its stack is destroyed letting no valid value for the returned reference. You are right, a function creating a value should either create it on the heap and return a pointer to it or return a copy of the value created. You modify the code to return a std::string (instead of a reference to a std::string). When running the code, it prints "We are Monday".
+After reading multiple times the source code, you start looking at the declaration of the functions you have created. You notice that the function **Day::text()** returns a reference to a std::string and start wondering if that could be the cause ? After some reflexion, your conclusion is that at runtime, once the function **Day::text()** has finished its execution, its stack is destroyed letting no valid value for the returned reference. You are right, a function creating a value should either create it on the heap and return a pointer to it or return a copy of the value created. You modify the code to return a std::string (instead of a reference to a std::string). When running the code, it prints "We are Monday".
 
 ```cpp
 #include <iostream>
@@ -374,7 +390,9 @@ int main() {
 }
 ```
 
-[=> Your code is ready](#end)
+### What do you do ?
+
+[=> Next](#end)
 
 <img src="https://www.interviewpuzzler.com/assets/sep_4.png"/>
 <img src="https://www.interviewpuzzler.com/assets/sep_4.png"/>
@@ -386,9 +404,9 @@ int main() {
 
 ## End
 
-You finally reached the end of the coding test and happy with the code your produced. Scott looks at it a few minutes and indicates that it is a good piece of work. You also mention to Scott the design decisions you have made.
+You finally reached the end of the coding test and happy with the code you have produced. You mention to Scott the design decisions you have made and the advantages of using an enum to guard against wrong inputs. Scott reads your solution and indicates that it is a good piece of work.
 
-`You successfully completed this C++ coding quiz`
+`Congratulation! You successfully completed this C++ coding quiz`
 
 <img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
 <img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
