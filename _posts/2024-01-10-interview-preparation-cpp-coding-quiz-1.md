@@ -10,7 +10,7 @@ published: true
 
 ## Introduction
 
-This page contains an interactive story where the reader will take part of a C++ coding quiz. The reader will be asked to write C++ code in an interactive quiz format. This quiz is designed for people preparing for a job interview or willing to improve their coding skills. [=> Start](#start).
+This page contains an interactive story where the reader will take part of a C++ coding quiz. The reader will be asked to write C++ code in an interactive quiz format. This quiz is designed for people preparing for a job interview or willing to improve their coding skills. [=> Start](#start)
 
 <img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
 <img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
@@ -406,7 +406,7 @@ int main() {
 
 You finally reached the end of the coding test and happy with the code you have produced. You mention to Scott the design decisions you have made and the advantages of using an enum to guard against wrong inputs. Scott reads your solution and indicates that it is a good piece of work.
 
-`Congratulation! You successfully completed this C++ coding quiz`
+`Congratulations ! You successfully completed this C++ coding quiz`
 
 <img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
 <img src="https://www.interviewpuzzler.com/assets/sep_1.png"/>
